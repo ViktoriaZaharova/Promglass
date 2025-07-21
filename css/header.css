@@ -1,14 +1,15 @@
-@font-face {
-  font-family: "AvenirNextCyr";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot");
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype");
+.logo {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Lack", sans-serif;
 }
-@font-face {
-  font-family: "Lack";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/Lack/Lack-Regular.eot");
-  src: url("../fonts/Lack/Lack-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lack/Lack-Regular.woff") format("woff"), url("../fonts/Lack/Lack-Regular.ttf") format("truetype");
+.logo:hover {
+  color: #6AC1EF;
+}
+.logo img {
+  width: 64px;
+  margin: 0 19px 0 0;
 }

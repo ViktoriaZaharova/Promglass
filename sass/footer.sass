@@ -1,3 +1,64 @@
-@import "fonts"
 @import "vars"
 
+footer
+  background: $dark
+  color: #fff
+  padding: 120px 0
+  .logo
+    margin: 0 0 auto
+
+.footer-box
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.footer-menu
+  width: 100%
+  line-height: 20px
+  letter-spacing: .2px
+  li
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+    a
+      color: #fff
+      font-family: $default-font
+      &:hover
+        color: $accent
+
+.menu-document
+  letter-spacing: .2px
+  line-height: 20px
+  li
+    margin: 0 0 24px
+    &:last-child
+      margin: 0
+    a
+      color: $accent
+      text-decoration: underline
+      &:hover
+        color: #fff
+
+.footer-contacts
+  margin: 0 0 24px
+  &:last-child
+    margin: 0
+  p
+    letter-spacing: 0.2px  
+  a
+    color: #fff
+    font-size: 28px
+    line-height: 32px
+    font-family: $title-font
+    &:hover
+      color: $accent 
+  span
+    font-size: 18px
+    line-height: 20px
+    font-family: $font     
+  .phone-link
+    color: $accent
+    &:hover
+      color: #fff    

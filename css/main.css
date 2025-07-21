@@ -1,0 +1,98 @@
+.image-wrapper {
+  border: 1px solid #1B2631 inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-wrapper img {
+  width: 100%;
+}
+
+.callback-section {
+  background: url("../img/callback-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+.callback-section__content {
+  max-width: 698px;
+}
+.callback-section h2 {
+  margin: 0 0 24px;
+}
+
+.callback-box {
+  margin: 0 0 0 auto;
+  max-width: 611px;
+  width: 100%;
+  background: #1B2631;
+  padding: 48px;
+}
+
+.form-file-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.form-file-wrapper label {
+  margin: 0;
+}
+
+.label-file {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #9DBCD8;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+}
+.label-file:hover {
+  background: #6AC1EF;
+}
+.label-file input {
+  display: none;
+}
+.label-file__icon {
+  fill: #fff;
+  margin: 0 0 0 8px;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+}
+.label-file__result {
+  width: 50%;
+  height: 52px;
+  background: #fff;
+  color: rgba(25, 41, 57, 0.4);
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "MPLUS1p", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 24px;
+}
+
+.file-format {
+  margin: 8px 0 0;
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-footer {
+  margin: 48px 0 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.consent-checkbox {
+  margin: 0 16px 0 0;
+}
