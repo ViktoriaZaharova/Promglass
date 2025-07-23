@@ -13,6 +13,7 @@
   <!-- add plugins css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/fancybox.css">
   <!-- add plugins css end -->
 
   <link rel="stylesheet" href="css/style.css">
@@ -70,13 +71,6 @@
     </div>
   </section>
 
-  <section class="">
-    <div class="container">
-      <div class="row">
-
-      </div>
-    </div>
-  </section>
 
   <section class="">
     <div class="container">
@@ -94,30 +88,284 @@
     </div>
   </section>
 
-  <section class="">
+  <section class="catalog-section">
     <div class="container">
       <div class="row">
+        <div class="col-12">
+          <h2>Каталог</h2>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="product-card">
+            <a href="category.html" class="product-card__img"></a>
+            <div class="product-card__body">
+              <a href="category.html" class="product-card__title h3">Стекло</a>
+              <div class="box-text">
+                <p>Прозрачное стекло используется в широком спектре производственных проектов. В зависимости от ваших
+                  нужд, мы изготовим стекло с различными дополнительными характеристиками.</p>
+              </div>
+              <a href="category.html" class="btn btn-accent"><span>каталог</span></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="">
+  <section class="history-company">
     <div class="container">
       <div class="row">
+        <div class="col-12">
+          <div class="h1 color-accent font-unbounded text-center">с 2023 г</div>
+          <h2 class="text-center">Компания "ПРОМГЛАСС" <br>
+            - это надежный производитель
+            стекла и стеклопакетов</h2>
+        </div>
 
+        <div class="col-12">
+          <div class="history-company-wrapper">
+            <div class="history-company-box">
+              <h3>Современная линия</h3>
+              <div class="box-text">
+                <p>У производства есть своя современная линия по производству стеклопакетов, которая позволяет регулярно
+                  улучшать качество выпускаемой продукции и скорость изготовления заказов</p>
+              </div>
+            </div>
+            <div class="history-company-box">
+              <h3>Закалка стекла с 2024 года</h3>
+              <div class="box-text">
+                <p>С 2024 года на производстве установлено оборудование для закалки стекла, изготовления безопасного
+                  многослойного стекла и других видов стекол, используемых в промышленном и гражданском строительстве.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="history-company-slider">
+            <div class="slide">
+              <a href="img/history1.jpg" class="history-company-slider__item" data-fancybox="history-gallery"><img
+                  src="img/history1.jpg" alt=""></a>
+            </div>
+            <div class="slide">
+              <a href="img/history1.jpg" class="history-company-slider__item" data-fancybox="history-gallery"><img
+                  src="img/history1.jpg" alt=""></a>
+            </div>
+            <div class="slide">
+              <a href="img/history1.jpg" class="history-company-slider__item" data-fancybox="history-gallery"><img
+                  src="img/history1.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="geography-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>География наших клиентов</h2>
+        </div>
+
+        <div class="col-12">
+          <div class="map-geography" id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="advantages-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="advantages-wrapper">
+            <div class="advantages-box">
+              <div class="advantages-box__top">
+                <div class="box-text">
+                  <p>Собственные производственные мощности</p>
+                </div>
+              </div>
+              <div class="advantages-box__body">
+                <h4>Свое
+                  производство</h4>
+              </div>
+            </div>
+            <div class="advantages-box">
+              <div class="advantages-box__top">
+                <div class="box-text">
+                  <p>Доставка по всей России</p>
+                </div>
+              </div>
+              <div class="advantages-box__body">
+                <h4>Доставка
+                </h4>
+              </div>
+            </div>
+            <div class="advantages-box">
+              <div class="advantages-box__top">
+                <div class="box-text">
+                  <p>Наши логистические цепочки имеют протяженность по всей России</p>
+                </div>
+              </div>
+              <div class="advantages-box__body">
+                <h4>Логистика
+                </h4>
+              </div>
+            </div>
+            <div class="advantages-box">
+              <div class="advantages-box__top">
+                <div class="box-text">
+                  <p>Все поставки и отгрузки производятся быстро, без задержек в четко оговоренные в договоре сроки</p>
+                </div>
+              </div>
+              <div class="advantages-box__body">
+                <h4>Поставки и отгрузки
+                  точно в срок</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="projects-section p-120 bg-dark color-white">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Реализованные проекты</h2>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-24">
+          <div class="project-card">
+            <a href="project.html" class="project-card__img"><img src="img/gallery1.jpg" alt=""></a>
+            <div class="project-card__body">
+              <a href="project.html" class="project-card__title">Библиотека им. Лермонтова, г. Пенза</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-24">
+          <div class="project-card">
+            <a href="project.html" class="project-card__img"><img src="img/gallery2.png" alt=""></a>
+            <div class="project-card__body">
+              <a href="project.html" class="project-card__title">Отель "Азимут", г. Пенза</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-24">
+          <div class="project-card">
+            <a href="project.html" class="project-card__img"><img src="img/gallery3.jpg" alt=""></a>
+            <div class="project-card__body">
+              <a href="project.html" class="project-card__title">ЖК "Квартал 55", г. Пенза</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-24">
+          <div class="project-card">
+            <a href="project.html" class="project-card__img"><img src="img/gallery4.png" alt=""></a>
+            <div class="project-card__body">
+              <a href="project.html" class="project-card__title">"Город Спутник", г. Пенза</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-24">
+          <div class="project-card">
+            <a href="project.html" class="project-card__img"><img src="img/gallery5.png" alt=""></a>
+            <div class="project-card__body">
+              <a href="project.html" class="project-card__title">ЖК "Аристократ", г. Пенза</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-24">
+          <div class="project-card">
+            <a href="project.html" class="project-card__img"><img src="img/gallery6.png" alt=""></a>
+            <div class="project-card__body">
+              <a href="project.html" class="project-card__title">ЖК "Лермонтов", г. Пенза</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 mt-24">
+          <a href="projects.html" class="btn btn-border btn-border-white m-auto"><span>Другие проекты</span></a>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="blog-section p-120">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-7">
-          <h2>Блог</h2>
+      <div class="row mb-24">
+        <div class="col-12 col-md-7 mb-24">
+          <h2 class="m-0">Блог</h2>
         </div>
-        <div class="col-12 col-md-5">
+        <div class="col-12 col-md-5 mb-24">
+          <a href="news.html" class="btn btn-arrow btn-dark ml-auto"><span class="btn-text">все новости</span><span
+              class="btn-arrow__icon"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+              </svg></span></a>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col-12">
+          <div class="news-card">
+            <div class="news-card__date">01.02.2025</div>
+            <a href="article.html" class="news-card__img"><img src="img/news1.jpg" alt=""></a>
+            <div class="news-card__body">
+              <a href="article.html" class="news-card__title">Открытие новой
+                производственной линии</a>
+              <div class="box-text">
+                <p>С нового года на производстве "ПРОМГЛАСС" открывается новая линия закалки стекол.</p>
+                <a href="article.html" class="color-accent text-decoration">Подробнее</a>
+              </div>
+
+              <a href="article.html" class="news-card__link btn btn-accent"><svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg></a>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card__date">01.02.2025</div>
+            <a href="article.html" class="news-card__img"><img src="img/news2.jpg" alt=""></a>
+            <div class="news-card__body">
+              <a href="article.html" class="news-card__title">Открытие новой
+                производственной линии</a>
+              <div class="box-text">
+                <p>С нового года на производстве "ПРОМГЛАСС" открывается новая линия закалки стекол.</p>
+                <a href="article.html" class="color-accent text-decoration">Подробнее</a>
+              </div>
+
+              <a href="article.html" class="news-card__link btn btn-accent"><svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg></a>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card__date">01.02.2025</div>
+            <a href="article.html" class="news-card__img"><img src="img/news3.jpg" alt=""></a>
+            <div class="news-card__body">
+              <a href="article.html" class="news-card__title">Открытие новой
+                производственной линии</a>
+              <div class="box-text">
+                <p>С нового года на производстве "ПРОМГЛАСС" открывается новая линия закалки стекол.</p>
+                <a href="article.html" class="color-accent text-decoration">Подробнее</a>
+              </div>
+
+              <a href="article.html" class="news-card__link btn btn-accent"><svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -168,7 +416,7 @@
                   <span class="label-checkbox__text">Нажимая на кнопку, вы соглашаетесь с условиями обработки
                     персональных данных</span>
                 </label>
-                <button type="submit" class="btn btn-accent">Отправить</button>
+                <button type="submit" class="btn btn-accent"><span class="btn-text">Отправить</span></button>
               </div>
             </form>
           </div>
@@ -266,10 +514,76 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/fancybox.umd.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <!-- add plugins js end-->
 
   <script src="js/common.js"></script>
+
+  <script>
+    ymaps.ready(init);
+    function init() {
+      var map = new ymaps.Map("map", {
+        center: [55.7558, 37.6176], // Центр - Москва
+        zoom: 5,
+        controls: ["zoomControl"]
+      });
+
+      // Массив меток
+      var placemarks = [
+        {
+          coords: [55.7558, 37.6176],
+          title: "ЖК Атмосфера",
+          address: "г. Москва, пр-т Строителей, 113",
+          link: "#"
+        },
+        {
+          coords: [56.3269, 44.0059],
+          title: "ЖК Нижний",
+          address: "г. Нижний Новгород, ул. Примерная, 5",
+          link: "#"
+        },
+        {
+          coords: [56.8389, 60.6057],
+          title: "ЖК Урал",
+          address: "г. Казань, ул. Ленина, 25",
+          link: "#"
+        },
+        {
+          coords: [54.2048, 37.6111],
+          title: "ЖК Тульский",
+          address: "г. Тула, ул. Новостроек, 12",
+          link: "#"
+        },
+        {
+          coords: [51.7735, 55.0988],
+          title: "ЖК Южный",
+          address: "г. Пенза, ул. Героев, 7",
+          link: "#"
+        }
+      ];
+
+      placemarks.forEach(function (mark) {
+        var placemark = new ymaps.Placemark(mark.coords, {
+          balloonContent: `
+            <div class="balloon-content">
+              <strong>${mark.title}</strong>
+              <p>${mark.address}</p>
+              <a href="${mark.link}" target="_blank">Перейти в проект</a>
+            </div>
+          `
+        }, {
+          iconLayout: 'default#image',
+          iconImageHref: 'img/marker.svg', // путь к твоему SVG-файлу
+          iconImageSize: [30, 42],      // подгони под твой SVG, если нужно
+          iconImageOffset: [-15, -42]   // центр маркера — корректируем по нужде
+        });
+
+        map.geoObjects.add(placemark);
+      });
+    }
+  </script>
 
 </body>
 

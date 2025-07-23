@@ -20,6 +20,13 @@
   src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.ttf") format("truetype");
 }
 @font-face {
+  font-family: "AvenirNextCyr";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/AvenirNextCyr/AvenirNext-DemiBold.eot");
+  src: url("../fonts/AvenirNextCyr/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNext-DemiBold.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNext-DemiBold.ttf") format("truetype");
+}
+@font-face {
   font-family: "Lack";
   font-weight: 400;
   font-style: normal;
@@ -46,6 +53,13 @@
   font-style: normal;
   src: url("../fonts/Geologica/Geologica-Light.eot");
   src: url("../fonts/Geologica/Geologica-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Geologica/Geologica-Light.woff") format("woff"), url("../fonts/Geologica/Geologica-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Unbounded";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Unbounded/Unbounded-Regular.eot");
+  src: url("../fonts/Unbounded/Unbounded-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Unbounded/Unbounded-Regular.woff") format("woff"), url("../fonts/Unbounded/Unbounded-Regular.ttf") format("truetype");
 }
 * {
   box-sizing: border-box;
@@ -260,6 +274,34 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   color: #fff;
 }
 
+.btn-arrow {
+  padding: 0;
+}
+.btn-arrow .btn-text {
+  padding: 10px 20px 10px 32px;
+}
+.btn-arrow__icon {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-dark {
+  fill: #fff;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn-dark .btn-arrow__icon {
+  border-left: 1px solid #fff;
+}
+.btn-dark::before {
+  background: #6AC1EF;
+}
+
 .svg-icon {
   display: inline-block;
   width: 100%;
@@ -289,11 +331,19 @@ ul, ol {
   padding: 0 12px;
 }
 
+.container-fluid {
+  padding: 0 12px;
+}
+
 .row {
   margin: 0 -12px;
 }
 .row > * {
   padding: 0 12px;
+}
+
+.bg-dark {
+  background: #1B2631 !important;
 }
 
 .color-white {
@@ -311,6 +361,26 @@ ul, ol {
 
 .p-120 {
   padding: 120px 0;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mt-24 {
+  margin-top: 24px;
 }
 
 h1, .h1 {
@@ -337,12 +407,24 @@ h3, .h3 {
   line-height: 100%;
 }
 
-h3, .h3 {
+h4, .h4 {
   width: 100%;
   margin: 0;
   font-size: 28px;
   line-height: 32px;
   font-family: "Lack", sans-serif;
+}
+
+.box-text {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+}
+.box-text p {
+  margin: 0 0 12px;
+}
+.box-text p:last-child {
+  margin: 0;
 }
 
 .box-text-big {
@@ -356,12 +438,44 @@ h3, .h3 {
   margin: 0;
 }
 
+.font-unbounded {
+  font-family: "Unbounded", sans-serif;
+}
+
 .slick-slider {
   width: 100%;
 }
 
 .slick-slide {
   outline: none;
+}
+
+.slick-arrow {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  bottom: 0;
+  right: 0;
+  width: 52px;
+  height: 52px;
+  background: #1B2631;
+  fill: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-arrow svg {
+  width: 32px;
+  height: 32px;
+}
+.slick-arrow:hover, .slick-arrow:focus {
+  background: #6AC1EF;
+  fill: #fff;
+}
+
+.slick-next {
+  right: 68px;
 }
 
 .label-checkbox {
