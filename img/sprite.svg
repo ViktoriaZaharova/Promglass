@@ -19,6 +19,12 @@
         </g>
     </symbol>
 
+    <symbol id="arrow-diagonal2" viewBox="0 0 46 46">
+        <path d="M9.83839 36.265L36.3685 9.73494M36.3685 9.73494L18.105 9.73493M36.3685 9.73494L36.3685 27.9984"
+            stroke-width="5" stroke-linecap="square" />
+    </symbol>
+
+
     <symbol id="arrow-right" viewBox="0 0 32 32">
         <g>
             <path

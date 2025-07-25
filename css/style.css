@@ -61,6 +61,13 @@
   src: url("../fonts/Unbounded/Unbounded-Regular.eot");
   src: url("../fonts/Unbounded/Unbounded-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Unbounded/Unbounded-Regular.woff") format("woff"), url("../fonts/Unbounded/Unbounded-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "KronaOne";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/KronaOne/KronaOne-Regular.eot");
+  src: url("../fonts/KronaOne/KronaOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/KronaOne/KronaOne-Regular.woff") format("woff"), url("../fonts/KronaOne/KronaOne-Regular.ttf") format("truetype");
+}
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -266,12 +273,17 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 .btn-accent {
   background: #6AC1EF;
   color: #fff;
+  border: 1px solid #fff;
 }
 .btn-accent::before {
   background: #1B2631;
 }
 .btn-accent:hover, .btn-accent:focus {
   color: #fff;
+}
+.btn-accent .btn-arrow__icon {
+  fill: #fff;
+  border-left: 1px solid #fff;
 }
 
 .btn-arrow {
@@ -381,6 +393,10 @@ ul, ol {
 
 .mt-24 {
   margin-top: 24px;
+}
+
+.m-24 {
+  margin: 24px 0;
 }
 
 h1, .h1 {
