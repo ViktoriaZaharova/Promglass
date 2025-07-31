@@ -1,3 +1,26 @@
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 18px 0;
+}
+header .logo {
+  font-size: 24px;
+  margin: 0 48px 0 0;
+}
+header .logo img {
+  width: 38px;
+  margin: 0 11px 0 0;
+}
+
+.mail-link {
+  margin: 0 48px 0 auto;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -12,4 +35,72 @@
 .logo img {
   width: 64px;
   margin: 0 19px 0 0;
+}
+
+.callback-btn {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  padding: 10px;
+  margin: 0 0 0 16px;
+}
+
+.phone-link {
+  color: #fff;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: "Lack", sans-serif;
+}
+.phone-link:hover {
+  color: #6AC1EF;
+}
+
+.mail-link {
+  margin: 0 48px 0 auto;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: 500;
+  color: #6AC1EF;
+}
+.mail-link:hover {
+  color: #fff;
+}
+
+.btn-burder {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  padding: 10px;
+  display: none;
+  margin: 0 16px 0 0;
+}
+.btn-burder span {
+  display: block;
+  background: #fff;
+  width: 100%;
+  height: 2px;
+  margin: 0 0 6px;
+}
+.btn-burder span:last-child {
+  margin: 0;
+}
+
+.nav-menu {
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-start;
+  font-size: 18px;
+  line-height: 22px;
+}
+.menu .menu-item {
+  margin: 0 32px 0 0;
+}
+.menu .menu-item:last-child {
+  margin: 0;
+}
+.menu a {
+  color: #fff;
 }

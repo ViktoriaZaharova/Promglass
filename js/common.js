@@ -9,21 +9,21 @@ Fancybox.bind("[data-fancybox]", {
 $('.history-company-slider').slick({
   slidesToShow: 1,
   fade: true,
-  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
-  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
 });
 
 $('.home-slider').slick({
   slidesToShow: 1,
   fade: true,
-  appendArrow: 'home-slider__nav',
-  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
-  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  appendArrows: '.home-slider__nav',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
 });
 //auto counter total//
 let homeSlider = $('.home-slider');
 
-$('.counter-slide__default').text("/ " + homeSlider.slick("getSlick").slideCount);
+$('.counter-slide__default').text("/" + homeSlider.slick("getSlick").slideCount);
 
 homeSlider.on('afterChange', function (event, slick, currentSlide) {
   $(".counter-slide__cp").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);

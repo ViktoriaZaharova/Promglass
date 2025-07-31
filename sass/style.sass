@@ -168,6 +168,8 @@ button, .btn
 .btn-border-white
   border-color: #fff
   color: #fff
+  svg
+    fill: #fff
   &::before
     background: $accent
   &:hover, &:focus
@@ -184,8 +186,7 @@ button, .btn
     color: #fff
   .btn-arrow__icon
     fill: #fff
-    border-left: 1px solid #fff 
-
+    border-left: 1px solid #fff
 
 .btn-arrow
   padding: 0
@@ -270,7 +271,7 @@ ul, ol
   margin-top: 24px
 
 .m-24
-  margin: 24px 0 
+  margin: 24px 0
 
 h1, .h1
   width: 100%
@@ -320,6 +321,65 @@ h4, .h4
 .font-unbounded
   font-family: "Unbounded", sans-serif
 
+.dropdown-toggle
+  display: flex
+  align-items: center
+  &:after
+    width: 28px
+    height: 28px
+    background: url('../img/arrow-bottom.svg') no-repeat center
+    background-size: 100%
+    border: none
+    vertical-align: middle
+    margin: 0
+    @include d-flex
+
+.dropdown-menu
+  min-width: 327px
+  border: 1px solid #8D9298
+  border-radius: 0
+  background: $dark
+  padding: 0
+  font-size: 18px
+
+  ul
+    width: 100%
+    margin: 0
+  li
+    width: 100%
+    border-bottom: 1px solid #8D9298
+    position: relative
+    &:last-child
+      border: none
+    .dropdown-menu
+      left: 100%
+      top: 0
+      a
+        border-bottom: 1px solid #8D9298
+        padding: 15px 24px
+        cursor: pointer
+        &:last-child
+          border: none
+
+  a
+    cursor: pointer
+    width: 100%
+    color: #fff
+    padding: 12px 12px 12px 24px
+    &:hover
+      background: #fff
+      color: #1B2631
+      &:after
+        background: url('../img/arrow-right-dark.svg') no-repeat center
+        background-size: 100%
+
+.submenu
+  .dropdown-toggle
+    &:after
+      background: url('../img/arrow-right.svg') no-repeat center
+      background-size: 100%
+      margin: 0 0 0 auto
+
 // slick slider
 .slick-slider
   width: 100%
@@ -331,7 +391,7 @@ h4, .h4
   position: absolute
   z-index: 1
   opacity: 1
-  bottom: 0 
+  bottom: 0
   right: 0
   width: 52px
   height: 52px
@@ -344,13 +404,19 @@ h4, .h4
     height: 32px
   &:hover, &:focus
     background: $accent
-    fill: #fff  
+    fill: #fff
+
+.slick-prev
+  right: 68px
 
 .slick-next
-  right: 68px    
+  right: 0
 
-// .slick-prev
-//   right: 0  
+.counter-slide
+  font-size: 48px
+  display: flex
+  align-items: center
+  font-family: $title-font
 
 //checkbox my
 .label-checkbox
