@@ -1,13 +1,544 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1650px)
+  .menu
+    font-size: 16px
+    line-height: normal
+    .menu-item
+      margin: 0
+
+    >li
+      padding: 15px 8px
+      &.dropdown
+        padding: 12px 8px
+
+  .mail-link
+    margin: 0 20px 0 auto
+    font-size: 18px
+    line-height: normal
+
+  header
+    padding: 10px 0
+    .logo
+      margin: 0 20px 0 0
+
+  .phone-link
+    font-size: 18px
+    line-height: normal
+
+  .quote-icon
+    font-size: 180px
+
+@media only screen and (max-width: 1500px)
+  .history-company-box
+    max-width: 49%
+
+  .advantages-box__top
+    min-height: 180px
+
+@media only screen and (max-width: 1400px)
+  .logo
+    font-size: 30px
+    img
+      width: 50px
+      margin: 0 10px 0 0
+
+  h1, .h1
+    font-size: 58px
+    line-height: normal
+
+  h2, .h2
+    font-size: 44px
+    line-height: normal
+
+  h3, .h3
+    font-size: 30px
+    line-height: normal
+
+  h4, .h4
+    line-height: normal
+    font-size: 22px
+
+  .choice-professionals h3
+    font-size: 30px
+
+  .box-text-big
+    font-size: 24px
+    line-height: normal
+
+  .p-120
+    padding: 80px 0
+
+  .btn-burger
+    display: flex
+
+  header .nav-menu
+    position: fixed
+    left: -100%
+    top: 0
+    height: 100%
+    background: #1B2631
+    overflow-y: auto
+    padding: 30px
+    max-width: 280px
+    width: 100%
+    transition: .3s ease
+    border-right: 1px solid #fff
+    &.active
+      left: 0
+
+  .menu
+    flex-direction: column
+    align-items: flex-start
+    font-size: 18px
+    width: 100%
+    li
+      width: 100%
+    .menu-item
+      width: 100%
+      padding: 0
+      margin: 0 0 15px
+      &:last-child
+        padding: 0
+        margin: 0
+      &:first-child
+        padding: 0
+        margin: 0 0 15px
+
+  .dropdown-menu
+    min-width: auto
+    width: 100%
+    font-size: 16px
+    li
+      .dropdown-menu
+        position: relative
+        left: 0
+        top: 0
+        a
+          padding: 12px
+
+  .dropdown-item
+    white-space: normal
+
+  .callback-btn
+    width: 48px
+    height: 48px
+    min-width: 48px
+    padding: 8px
+
+  .mission-section h2
+    margin: 0 auto 60px
+
+  .product-card__body
+    padding: 24px
+
+  .advantages-section
+    padding: 0 0 80px
+
+  .project-card__title
+    font-size: 24px
+
+  .project-card__img
+    height: 350px
+
+  .project-card__body
+    height: calc( 100% - 350px )
+
+  .news-card__title
+    font-size: 28px
+    min-width: 400px
+    max-width: 400px
+
+  .home-category-item
+    padding: 15px 20px
+    font-size: 16px
+    svg
+      width: 35px
+      height: 35px
+
+  .counter-slide
+    font-size: 40px
+
+  .mission-advantages-item
+    padding: 20px
+
+  .product-card__img
+    height: 350px
+
+  .product-card__body
+    height: calc( 100% - 350px )
+
+  .history-company
+    padding: 80px 0 0
+    .h1
+      font-size: 60px
+    h2
+      margin: 0 auto 40px
+
 @media only screen and (max-width: 1200px)
+  h1, .h1
+    font-size: 44px
+
+  h2, .h2
+    font-size: 34px
+    margin: 0 auto 30px
+
+  h3, .h3
+    font-size: 28px
+
+  .quote-icon
+    font-size: 120px
+    margin: 0 auto -34px
+
+  .counter-slide
+    font-size: 34px
+
+  .footer-box, .nav-menu-document
+    margin: 0 0 30px
+
+  .footer-box
+    height: auto
+
+  footer
+    padding: 60px 0
+    .logo
+      margin: 0 0 30px
+
+  .history-company-box
+    padding: 22px
+
+  .history-company-slider
+    margin: 20px 0 0
+
+  .history-company-slider__item
+    height: 450px
+
+  .geography-section
+    margin: 60px 0 40px
+
+  .map-geography
+    height: 450px
+
+  .advantages-box
+    padding: 0 0 20px
+    flex: none
+    width: 50%
+
+  .advantages-box:after, .advantages-box:last-child:after,
+  .advantages-box:first-child .advantages-box__body::before, .advantages-box:first-child .advantages-box__body:after, .advantages-box:last-child .advantages-box__body::before, .advantages-box:last-child .advantages-box__body:after
+    display: none
+
+  .advantages-box:first-child::before, .advantages-box:nth-child(3):before
+    display: none
+
+  .advantages-wrapper
+    flex-wrap: wrap
+
+  .advantages-box__top
+    min-height: 160px
+
+  .p-120
+    padding: 60px 0
+
+  .project-card__title
+    font-size: 20px
+
+  .project-card__body
+    padding: 10px 20px
 
 @media only screen and (max-width: 992px)
+  .history-company .h1
+    font-size: 40px
+
+  h2, .h2
+    font-size: 30px
+
+  h3, .h3, .choice-professionals h3
+    font-size: 24px
+
+  .box-text-big
+    font-size: 18px
+
+  .callback-section
+    position: relative
+    z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      z-index: -1
+      width: 100%
+      height: 100%
+      background: #000
+      opacity: 0.3
+      top: 0
+      left: 0
+
+  .callback-section__content
+    max-width: none
+
+  .callback-box
+    max-width: none
+    margin: 30px 0 0
+
+  .form-footer
+    margin: 20px 0 0
+
+  .callback-box
+    padding: 30px
+
+  .news-card__img
+    width: 250px
+
+  .news-card__body
+    width: calc( 100% - 250px )
+
+  .news-card__title
+    font-size: 22px
+    width: 240px
+    min-width: 240px
+    padding: 0 10px 0 0
+
+  .p-120
+    padding: 60px 0
+
+  .product-card
+    flex: none
+    width: 100%
+    margin: 0 0 20px
+    &__body
+      height: auto
+      padding: 16px
+    &__img
+      height: auto
+      padding-bottom: 56%
+      position: relative
+      z-index: 1
+      img
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        position: absolute
+
+  .mission-advantages-item
+    flex: none
+    width: 33.33%
+
+  .mission-advantages
+    margin: 40px 0 0
+
+  .mission-list
+    margin: 30px 0 0
+
+  .choice-professionals h3
+    br
+      display: none
+
+  .mission-section h2
+    margin: 0 auto 40px
+
+  .image-wrapper
+    position: relative
+    z-index: 1
+    padding-bottom: 56%
+    img
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%  
 
 @media only screen and (max-width: 768px)
+  h1, .h1
+    font-size: 30px
+
+  h2, .h2
+    font-size: 24px
+
+  .news-card
+    flex-wrap: wrap
+    &__img
+      padding-bottom: 56%
+      position: relative
+      z-index: 1
+      width: 100%
+      img
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        top: 0
+    &__body
+      width: 100%
+      padding: 20px 0 0
+      flex-wrap: wrap
+      .box-text
+        margin: 14px 0
+    &__link
+      margin: 0
+    &__title
+      width: 100%
+      padding: 0
+      line-height: normal
+      min-width: 100%
+
+  footer
+    .nav-menu
+      margin: 0 0 30px
+
+  .footer-contacts a
+    font-size: 22px
+
+  .advantages-section
+    padding: 40px 0
+
+  .advantages-wrapper
+    align-items: flex-start
+
+  .advantages-box
+    width: 100%
+    height: auto
+    border: 1px solid rgba(#8d9298, .5)
+    margin: 0 0 20px
+    padding: 0
+    &:last-child
+      margin: 0
+    &::before
+      display: none
+    &__top
+      min-height: auto
+      padding: 16px
+    &__body
+      height: auto
+      padding: 16px
+      border-bottom: none
+
+  .blog-section
+    .ml-auto
+      margin: 0
+
+  .project-card__img
+    padding-bottom: 56%
+    position: relative
+    z-index: 1
+    height: auto
+    img
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+
+  .history-company
+    padding: 60px 0
+
+  .catalog-section
+    padding: 0 0 60px
+
+  .mission-advantages-item
+    width: 50%
+
+  .box-text
+    font-size: 16px
+    line-height: normal
+    letter-spacing: 0
+
+  .quote-icon
+    font-size: 60px
+    margin: 0 auto -20px
+
+  .home
+    padding: 120px 0 0
+    .h1
+      max-width: none
+      br
+        display: none
+
+  .home-slider
+    width: 100%
+
+  .home-content
+    width: 100%
+    padding: 0
+    max-width: none
+    margin: 20px 0 0
+    .box-text
+      max-width: none
+
+  .home-category
+    margin: 50px 0 10px
+    flex-wrap: wrap
+
+  .home-category-item
+    width: 100%
+    flex: none
+    border: 1px solid rgba(#fff, .5)
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+      display: none
+
+  .home-category::before, .home-category:after, .home .container::before, .home .container:after, .home-category-item::before, .home-category-item:after, .home-category-item:first-child:after
+    display: none
+
+  header
+    .mail-link
+      display: none
+    .logo
+      margin: 0 auto 0 0
 
 @media only screen and (max-width: 576px)
+  .project-card__img
+    height: 250px
+
+  .project-card__body
+    height: auto
+
+  .form-file-wrapper
+    flex-direction: column
+    align-items: flex-start
+
+  .label-file
+    width: 100%
+    &__result
+      width: 100%
+
+  .form-footer
+    flex-wrap: wrap
+
+  form
+    [type="submit"]
+    width: 100%
+    margin: 10px 0 0
+
+  .consent-checkbox
+    margin: 0
+
+  footer
+    padding: 40px 0 20px
+
+  .map-geography, .history-company-slider__item
+    height: 300px
+
+  .history-company-box
+    max-width: none
+    margin: 0 0 20px
+
+  .mission-advantages-item
+    width: 100%
+    br
+      display: none
+
+  header
+    .phone-link
+      display: none
+    .logo
+      font-size: 20px
+      img
+        width: 30px
+        height: 30px
+        min-width: 30px      
 
 @media only screen and (max-width: 480px)
 

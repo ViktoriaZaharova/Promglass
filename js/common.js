@@ -28,3 +28,19 @@ $('.counter-slide__default').text("/" + homeSlider.slick("getSlick").slideCount)
 homeSlider.on('afterChange', function (event, slick, currentSlide) {
   $(".counter-slide__cp").text(currentSlide < 10 ? `${currentSlide + 1}` : currentSlide + 1);
 });
+
+// jQuery код
+$(document).ready(function () {
+  $('.btn-burger').on('click', function (e) {
+    e.stopPropagation(); // предотвратить закрытие меню при клике на кнопку
+    $('.nav-menu').toggleClass('active');
+  });
+
+  $('.nav-menu').on('click', function (e) {
+    e.stopPropagation(); // предотвратить закрытие при клике внутри меню
+  });
+
+  $(document).on('click', function () {
+    $('.nav-menu').removeClass('active');
+  });
+});

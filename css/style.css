@@ -479,6 +479,8 @@ h4, .h4 {
 }
 
 .dropdown-menu {
+  top: 100%;
+  left: 0;
   min-width: 327px;
   border: 1px solid #8D9298;
   border-radius: 0;
