@@ -44,3 +44,13 @@ $(document).ready(function () {
     $('.nav-menu').removeClass('active');
   });
 });
+
+// toggle card hidden
+$('.btn-toggle').on('click', function (e) {
+  e.preventDefault();
+  $(this).parents('.row').find('.toggle-card-col:hidden').fadeIn();
+  var onBlock = $(this).parents('.row').find('.toggle-card-col:hidden').length;
+  if (onBlock <= 0) {
+    $(this).hide();
+  }
+});

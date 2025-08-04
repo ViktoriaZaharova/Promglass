@@ -190,6 +190,9 @@
   .history-company h2 {
     margin: 0 auto 40px;
   }
+  .box-text-border {
+    padding: 24px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   h1, .h1 {
@@ -262,6 +265,12 @@
   }
   .project-card__body {
     padding: 10px 20px;
+  }
+  .box-text-border {
+    padding: 16px;
+  }
+  .category-special {
+    padding: 24px 0 80px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -535,8 +544,14 @@
   .page-wrapper {
     padding: 100px 0 60px;
   }
+  .category-special {
+    padding: 24px 0 60px;
+  }
 }
 @media only screen and (max-width: 576px) {
+  h1, .h1 {
+    font-size: 26px;
+  }
   .project-card__img {
     height: 250px;
   }
