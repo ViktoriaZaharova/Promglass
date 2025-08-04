@@ -126,6 +126,10 @@ img {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-decoration {
   text-decoration: underline;
 }
@@ -394,6 +398,10 @@ ul, ol {
   margin-bottom: 24px;
 }
 
+.mb-48 {
+  margin-bottom: 48px;
+}
+
 .mt-24 {
   margin-top: 24px;
 }
@@ -531,6 +539,46 @@ h4, .h4 {
   background: url("../img/arrow-right.svg") no-repeat center;
   background-size: 100%;
   margin: 0 0 0 auto;
+}
+
+.nav-breadcrumb {
+  width: 100%;
+  margin: 0 auto 16px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "AvenirNextCyr", sans-serif;
+}
+.breadcrumb li a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.breadcrumb li a:hover {
+  color: #6AC1EF;
+}
+.breadcrumb li a:after {
+  content: "/";
+  display: inline-block;
+  margin: 0 10px;
+}
+.breadcrumb li.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: none;
 }
 
 .slick-slider {
