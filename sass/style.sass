@@ -179,6 +179,15 @@ button, .btn
     border-color: #fff
     color: $dark
 
+.btn-border-dark
+  border-color: $dark
+  color: $dark
+  &::before
+    background: $accent
+  &:hover, &:focus
+    color: $dark
+
+
 .btn-accent
   background: $accent
   color: #fff
@@ -275,6 +284,9 @@ ul, ol
 
 .mt-24
   margin-top: 24px
+
+.mt-48
+  margin-top: 48px  
 
 .m-24
   margin: 24px 0

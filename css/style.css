@@ -277,6 +277,17 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   color: #1B2631;
 }
 
+.btn-border-dark {
+  border-color: #1B2631;
+  color: #1B2631;
+}
+.btn-border-dark::before {
+  background: #6AC1EF;
+}
+.btn-border-dark:hover, .btn-border-dark:focus {
+  color: #1B2631;
+}
+
 .btn-accent {
   background: #6AC1EF;
   color: #fff;
@@ -404,6 +415,10 @@ ul, ol {
 
 .mt-24 {
   margin-top: 24px;
+}
+
+.mt-48 {
+  margin-top: 48px;
 }
 
 .m-24 {
