@@ -413,12 +413,20 @@ ul, ol {
   margin-bottom: 48px;
 }
 
+.mb-64 {
+  margin-bottom: 64px;
+}
+
 .mt-24 {
   margin-top: 24px;
 }
 
 .mt-48 {
   margin-top: 48px;
+}
+
+.mt-64 {
+  margin-top: 64px;
 }
 
 .m-24 {
@@ -601,6 +609,17 @@ h4, .h4 {
   display: none;
 }
 
+.breadcrumb-v2 {
+  text-align: left;
+  justify-content: flex-start;
+}
+.breadcrumb-v2 li a {
+  color: rgba(27, 38, 49, 0.6);
+}
+.breadcrumb-v2 li.active {
+  color: rgba(27, 38, 49, 0.4);
+}
+
 .slick-slider {
   width: 100%;
 }
@@ -646,6 +665,29 @@ h4, .h4 {
   display: flex;
   align-items: center;
   font-family: "Lack", sans-serif;
+}
+
+.slider-stretch .slick-slide {
+  padding: 0 12px;
+  height: auto;
+}
+.slider-stretch .slick-list {
+  margin: 0 -12px;
+}
+.slider-stretch .slick-track {
+  display: flex;
+  align-items: stretch;
+}
+.slider-stretch .slick-arrow {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.slider-stretch .slick-prev {
+  right: auto;
+  left: -26px;
+}
+.slider-stretch .slick-next {
+  right: -26px;
 }
 
 .label-checkbox {

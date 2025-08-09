@@ -282,11 +282,17 @@ ul, ol
 .mb-48
   margin-bottom: 48px  
 
+.mb-64
+  margin-bottom: 64px  
+
 .mt-24
   margin-top: 24px
 
 .mt-48
   margin-top: 48px  
+
+.mt-64
+  margin-top: 64px  
 
 .m-24
   margin: 24px 0
@@ -437,6 +443,15 @@ h4, .h4
 .breadcrumb-item+.breadcrumb-item::before
   display: none           
 
+.breadcrumb-v2
+  text-align: left
+  justify-content: flex-start
+  li
+    a
+      color: rgba($dark, .6)
+    &.active
+      color: rgba($dark, .4)   
+
 // slick slider
 .slick-slider
   width: 100%
@@ -474,6 +489,25 @@ h4, .h4
   display: flex
   align-items: center
   font-family: $title-font
+
+.slider-stretch
+  .slick-slide
+    padding: 0 12px
+    height: auto
+  .slick-list
+    margin: 0 -12px  
+  .slick-track
+    display: flex
+    align-items: stretch
+  .slick-arrow
+    top: 50%
+    transform: translate(0,-50%)
+  .slick-prev
+    right: auto
+    left: -26px
+  .slick-next
+    right: -26px        
+
 
 //checkbox my
 .label-checkbox
