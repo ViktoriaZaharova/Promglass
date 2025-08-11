@@ -795,12 +795,23 @@
   height: 100%;
   width: 100%;
   margin: 0 0 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 .article-page__content .box-text {
+  max-width: 676px;
+}
+.article-page__content .box-text p {
   color: rgba(27, 38, 49, 0.6);
 }
+.article-page__content .box-text p strong {
+  color: #1B2631;
+}
+.article-page__content .box-text h4 {
+  margin: 0 0 8px;
+}
 .article-page .nav-breadcrumb {
-  margin: 0 0 48px;
+  margin: 0 0 auto;
 }
 .article-page .news-card__date {
   position: relative;
@@ -840,4 +851,32 @@
 
 .advantages-for-clients {
   margin: 98px 0 0;
+}
+
+.project-page h1 {
+  margin: 0 0 12px;
+}
+.project-address {
+  margin: 0 0 48px;
+}
+.project-address p {
+  color: rgba(27, 38, 49, 0.6);
+}
+.project-address p strong {
+  color: #1B2631;
+}
+
+.realization .article-slider {
+  margin: 0;
+}
+.realization .article-slider .slick-prev {
+  left: 0;
+}
+.realization .article-slider .slick-next {
+  right: 0;
+}
+.realization .history-company-box {
+  max-width: none;
+  margin: 0;
+  height: 100%;
 }

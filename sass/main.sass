@@ -669,10 +669,18 @@
     height: 100%
     width: 100%
     margin: 0 0 0 auto
+    display: flex
+    flex-direction: column
     .box-text
-      color: rgba($dark, .6)
+      max-width: 676px
+      p
+        color: rgba($dark, .6)
+        strong
+          color: $dark
+      h4
+        margin: 0 0 8px    
   .nav-breadcrumb
-    margin: 0 0 48px
+    margin: 0 0 auto
   .news-card__date
     position: relative
     width: fit-content
@@ -704,3 +712,27 @@
 .advantages-for-clients
   margin: 98px 0 0
   
+
+.project-page
+  h1
+    margin: 0 0 12px
+  .box-text
+
+.project-address
+  margin: 0 0 48px
+  p
+    color: rgba($dark, .6)  
+    strong
+      color: $dark      
+
+.realization
+  .article-slider
+    margin: 0
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0  
+  .history-company-box
+    max-width: none
+    margin: 0
+    height: 100%  
