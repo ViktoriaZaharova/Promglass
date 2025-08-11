@@ -880,3 +880,78 @@
   margin: 0;
   height: 100%;
 }
+
+.contacts-page {
+  padding: 80px 0 100px;
+}
+.contacts-page h1 {
+  margin: 0 0 24px;
+}
+.contacts-page .nav-breadcrumb {
+  margin: 0 0 48px;
+}
+.contacts-page .map-geography {
+  height: 412px;
+  width: 100%;
+}
+.contacts-page__head {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 16px;
+}
+
+.contacts-box {
+  border: 1px solid rgba(27, 38, 49, 0.4);
+  margin: 0 0 24px;
+  padding: 32px;
+  max-width: 578px;
+  width: 100%;
+}
+.contacts-box:last-child {
+  margin: 0;
+}
+.contacts-box:hover {
+  background: #1B2631;
+  color: #fff;
+}
+
+.list-social {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.list-social li {
+  margin: 0 24px 0 0;
+}
+.list-social li:last-child {
+  margin: 0;
+}
+.list-social li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6AC1EF;
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  padding: 10px;
+}
+.list-social li a:hover {
+  background: #1B2631;
+}
+
+.btn-requizites {
+  margin-left: auto;
+}
+.btn-requizites svg {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  margin: 0 0 0 16px;
+}
+
+.contacts-address {
+  margin: 0;
+  max-width: 450px;
+}

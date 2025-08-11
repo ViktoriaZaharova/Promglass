@@ -296,6 +296,9 @@
   .slider-stretch .slick-next {
     right: 0;
   }
+  .contacts-box {
+    padding: 20px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .history-company .h1 {
@@ -430,6 +433,12 @@
   }
   .project-page h1 br {
     display: none;
+  }
+  .contacts-page {
+    padding: 60px 0 80px;
+  }
+  .contacts-page .nav-breadcrumb {
+    margin: 0 0 24px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -656,6 +665,19 @@
     width: 30px;
     height: 30px;
     min-width: 30px;
+  }
+  .contacts-page__head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn-requizites {
+    margin: 10px 0 0;
+  }
+  .contacts-box {
+    padding: 16px;
+  }
+  .contacts-page .map-geography {
+    height: 300px;
   }
 }
 @media only screen and (max-width: 480px) {
