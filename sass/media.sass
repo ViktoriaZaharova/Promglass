@@ -315,6 +315,22 @@
     &:last-child
       margin: 24px 0 0
 
+  .quality-control__content
+    max-width: 400px
+
+  .quality-slider
+    width: calc( 100% - 400px )
+
+  .stages-manufacturer
+    padding: 60px 0 40px
+
+  .stages-manufacturer-box
+    padding: 24px
+    h3
+      font-size: 60px
+    h4
+      margin: 18px 0 10px  
+
 @media only screen and (max-width: 992px)
   .history-company .h1
     font-size: 40px
@@ -485,6 +501,52 @@
       margin: 20px 0
     .btn
       margin: 0   
+
+  .slider-nav
+    justify-content: flex-start
+    margin: 0 0 24px
+
+  .quality-slider
+    width: 100%  
+
+  .quality-control
+    h2
+      br
+        display: none
+    &__content
+      max-width: none
+      border-bottom: 1px solid #6D8897 
+      &::before
+        display: none
+
+  .equipment-content
+    max-width: none
+
+  .equipment-section::before
+    display: none 
+
+  .equipment-slider
+    max-width: none
+    .slick-arrow
+      top: -70px  
+      background: #1B2631
+      fill: #fff
+      &:hover
+        background: #1B2631
+        fill: #fff
+
+  .equipment-characteristics
+    justify-content: flex-start
+    li
+      width: 100%
+      margin: 0 0 8px
+      &:last-child
+        margin: 0
+      span
+        font-size: 30px        
+    
+  .box-text-info
+    padding: 24px
     
 @media only screen and (max-width: 768px)
   h1, .h1

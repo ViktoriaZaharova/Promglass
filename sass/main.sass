@@ -979,3 +979,158 @@
     right: 68px
   .slick-next
     right: 0
+
+.page-manufacturer
+  .box-text
+    max-width: 1025px
+
+.stages-manufacturer
+  padding: 120px 0 96px
+
+.stages-manufacturer-box
+  width: 100%
+  height: 100%
+  border: 1px solid rgba($dark, .4)
+  padding: 32px
+  h3
+    color: $accent
+    font-size: 94px
+    font-family: $title-font
+  h4
+    margin: 24px 0 12px
+
+.equipment-slider
+  margin: 116px 0 0 auto
+  padding: 16px
+  max-width: 892px
+  width: 100%
+  background: $dark
+  .slick-arrow
+    bottom: auto
+    top: -116px
+    transform: none
+    background: #fff
+    fill: $dark
+    &:hover
+      background: $accent
+      fill: $dark
+  .slick-prev
+    left: auto
+    right: 68px
+  .slick-next
+    right: 0    
+
+
+.equipment-section
+  position: relative
+  z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    height: 100%
+    width: 50%
+    z-index: -1
+    right: 0
+    top: 0
+    background: $dark
+  h2
+    margin: 0 0 24px
+  .box-text
+    margin: 0 0 24px
+    &:last-child
+      margin: 0
+    ul
+      margin: 12px 0
+      &:last-child
+        margin: 12px 0 0  
+
+.equipment-content
+  max-width: 476px
+  width: 100%
+
+.box-text-info
+  background: $accent
+  padding: 32px
+  color: #fff    
+
+.equipment-characteristics
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  li
+    display: flex
+    align-items: center
+    span
+      color: $accent   
+      font-size: 40px
+      font-family: $title-font
+      margin: 0 0 0 8px  
+
+.quality-control
+  position: relative
+  z-index: 1
+  overflow: hidden
+
+
+.quality-slider 
+  padding: 24px
+  width: calc( 100% - 496px )
+  &__nav
+    .slick-arrow
+      background: #fff
+      fill: $dark 
+      &:hover
+        background: $accent
+        fill: $dark
+
+.quality-control-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  border: 1px solid #6D8897   
+  border-left: none
+  border-right: none  
+  position: relative
+  z-index: 1
+  &::before, &:after
+    content: ''
+    position: absolute
+    z-index: -1
+    width: 1px
+    height: calc(100% + 240px)
+    top: 50%
+    transform: translate(0,-50%)
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 50%, #fff 63%, rgba(255, 255, 255, 0) 100%)
+  &::before
+    left: 0
+  &:after
+    right: 0  
+
+       
+
+.quality-control__content
+  max-width: 496px
+  width: 100%
+  padding: 24px
+  position: relative
+  z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    z-index: -1
+    width: 1px
+    height: calc(100% + 240px)
+    top: 50%
+    right: 0
+    transform: translate(0,-50%)
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 50%, #fff 63%, rgba(255, 255, 255, 0) 100%)
+  .box-text
+    p
+      margin: 0 0 24px
+      &:last-child
+        margin: 0
+
+
