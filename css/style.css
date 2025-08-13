@@ -291,13 +291,14 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 .btn-accent {
   background: #6AC1EF;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #6AC1EF;
 }
 .btn-accent::before {
   background: #1B2631;
 }
 .btn-accent:hover, .btn-accent:focus {
   color: #fff;
+  border-color: #fff;
 }
 .btn-accent .btn-arrow__icon {
   fill: #fff;

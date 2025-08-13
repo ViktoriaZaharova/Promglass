@@ -588,6 +588,12 @@
   .box-text-info {
     padding: 24px;
   }
+  .modal-content {
+    padding: 24px;
+  }
+  #thanksModal .modal-body {
+    margin: 60px 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1, .h1 {
@@ -783,7 +789,7 @@
   .form-footer {
     flex-wrap: wrap;
   }
-  form {
+  form [type=submit] {
     width: 100%;
     margin: 10px 0 0;
   }

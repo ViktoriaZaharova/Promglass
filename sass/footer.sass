@@ -63,3 +63,62 @@ footer
     color: $accent
     &:hover
       color: #fff    
+
+.modal-dialog
+  max-width: 640px  
+  
+.modal-content
+  background: $dark
+  border: none
+  border-radius: 0
+  color: #fff
+  padding: 64px
+  form
+    margin: 32px 0 0
+  .form-footer
+    margin: 32px 0 0  
+
+.modal-title
+  margin: 0 24px 0 0 
+  line-height: normal 
+
+.modal-header
+  align-items: flex-start
+  padding: 0
+  border: none
+  border-radius: 0
+  .btn-close
+    border: 1px solid #fff
+    position: relative
+    z-index: 1
+    width: 52px
+    min-width: 52px
+    max-width: 52px
+    height: 52px
+    margin: 0 0 0 auto
+    background: transparent
+    fill: #fff
+    opacity: 1
+    border-radius: 0
+    padding: 10px
+    box-sizing: border-box
+    @include d-flex
+    &:focus
+      box-shadow: none
+
+.modal-body
+  margin: 12px 0 0
+  padding: 0
+  border: none  
+
+#thanksModal
+  .modal-body
+    margin: 140px 0 
+    text-align: center
+    .btn
+      margin: 0 auto
+  .modal-title
+    margin: 0 auto 24px
+  .box-text
+    margin: 24px auto
+        
