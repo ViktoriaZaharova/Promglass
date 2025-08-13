@@ -258,6 +258,8 @@
   h2
     max-width: 1000px
     margin: 0 auto 80px
+  .history-company-box
+    max-width: 704px
 
 .history-company-wrapper
   width: 100%
@@ -267,7 +269,6 @@
   flex-wrap: wrap
 
 .history-company-box
-  max-width: 704px
   width: 100%
   margin: 0 0 40px
   padding: 32px
@@ -290,6 +291,11 @@
 // geography-section
 .geography-section
   margin: 120px 0 80px
+  .history-company-box
+    height: 100%
+    margin: 0
+    h4
+      margin: 0 0 16px
 
 .map-geography
   width: 100%
@@ -851,7 +857,7 @@
     .box-text
       margin: 0
     h4
-      margin: 0 0 8px  
+      margin: 0 0 8px
   .advantages-box__icon
     width: 48px
     height: 48px
@@ -909,7 +915,7 @@
 .certificate-item
   width: 100%
   img
-    width: 100%    
+    width: 100%
 
 .certificates-section
   .advantages-box
@@ -937,6 +943,39 @@
     min-width: 28px
     @include d-flex
   &.active
-    svg  
+    svg
       transform: rotate(180deg)
 
+.installation-section
+  h2
+    margin: 0
+
+.package-section
+  position: relative
+  z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 100%
+    z-index: -1
+    height: 423px
+    background: $dark
+  .history-company-box
+    margin: 0 0 24px
+    &:last-child
+      margin: 0
+
+.package-slider
+  background: $dark
+  padding: 16px
+  margin: 132px auto 0
+  .slick-arrow
+    transform: none
+    top: -100px
+  .slick-prev
+    left: auto
+    right: 68px
+  .slick-next
+    right: 0

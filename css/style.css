@@ -405,6 +405,10 @@ ul, ol {
   margin: 0 auto;
 }
 
+.mb-12 {
+  margin-bottom: 12px;
+}
+
 .mb-20 {
   margin-bottom: 20px;
 }

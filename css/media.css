@@ -34,11 +34,14 @@
   }
 }
 @media only screen and (max-width: 1500px) {
-  .history-company-box {
+  .history-company .history-company-box {
     max-width: 49%;
   }
   .advantages-box__top {
     min-height: 180px;
+  }
+  .package-section .history-company-box {
+    max-width: none;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -308,6 +311,28 @@
   .applications-section {
     margin: 60px 0 40px;
   }
+  .package-slider .slick-prev {
+    left: auto;
+    right: 68px;
+  }
+  .package-section::before {
+    height: 20%;
+  }
+  .package-slider {
+    margin: 100px 0 0;
+  }
+  .package-slider .slick-arrow {
+    top: -70px;
+  }
+  .package-type-box {
+    margin: 20px 0 0;
+  }
+  .package-section .history-company-box {
+    margin: 24px 0 0;
+  }
+  .package-section .history-company-box:last-child {
+    margin: 24px 0 0;
+  }
 }
 @media only screen and (max-width: 992px) {
   .history-company .h1 {
@@ -488,6 +513,12 @@
   .product-page {
     padding: 40px 0;
   }
+  .installation-section .box-text {
+    margin: 20px 0;
+  }
+  .installation-section .btn {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1, .h1 {
@@ -495,6 +526,9 @@
   }
   h2, .h2 {
     font-size: 24px;
+  }
+  h3, .h3, .choice-professionals h3 {
+    font-size: 20px;
   }
   .news-card {
     flex-wrap: wrap;
@@ -753,6 +787,11 @@
 @media only screen and (max-width: 480px) {
   .p-120 {
     padding: 40px 0;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .package-section::before {
+    height: 15%;
   }
 }
 @media only screen and (min-width: 992px) {
