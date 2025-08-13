@@ -260,7 +260,7 @@
     margin-bottom: 24px
 
   .mt-64
-    margin-top: 24px  
+    margin-top: 24px
 
   .article-content .box-text-big p
     margin: 0 0 24px
@@ -268,7 +268,7 @@
       margin: 0
 
   .article-content .box-text-border
-    margin: 24px 0 0      
+    margin: 24px 0 0
 
   .advantages-for-clients
     margin: 40px 0 0
@@ -281,6 +281,16 @@
 
   .contacts-box
     padding: 20px
+
+  .advantages-product
+    .advantages-box
+      width: 33.33%
+      &:last-child
+        &::before, &:after
+          display: block
+
+  .applications-section
+    margin: 60px 0 40px
 
 @media only screen and (max-width: 992px)
   .history-company .h1
@@ -382,7 +392,7 @@
       left: 0
       top: 0
       width: 100%
-      height: 100%  
+      height: 100%
 
   .mb-48
     margin-bottom: 30px
@@ -399,24 +409,54 @@
     &__img
       margin: 20px auto 0
       height: auto
-      
-          
+
   .article-page__content .box-text
     max-width: none
 
   .project-address
     margin: 0 0 20px
 
-
   .project-page h1
     br
-      display: none 
+      display: none
 
   .contacts-page
     padding: 60px 0 80px
     .nav-breadcrumb
-      margin: 0 0 24px    
-      
+      margin: 0 0 24px
+
+  .advantages-product
+    padding: 60px 0
+    .advantages-box
+      width: 100%
+      border: 1px solid rgba(141, 146, 152, 0.5)
+      margin: 0 0 16px
+      &:last-child
+        margin: 0
+      &::before, &:after
+        display: none
+      &__top
+        height: auto
+        min-height: auto
+        border-bottom: 1px solid rgba(141, 146, 152, 0.5)
+      &__body
+        border: none
+        height: auto
+      &:last-child
+        &::before, &:after
+          display: none
+      br
+        display: none
+    .advantages-box__icon
+      width: 40px
+      height: 40px
+      min-width: 40px
+      padding: 5px
+      margin: 0 10px 0 0
+
+  .product-page
+    padding: 40px 0
+    
 @media only screen and (max-width: 768px)
   h1, .h1
     font-size: 30px
@@ -560,7 +600,7 @@
     padding: 60px 0
 
   .page-wrapper
-    padding: 100px 0 60px  
+    padding: 100px 0 60px
 
   .category-special
     padding: 24px 0 60px
@@ -568,13 +608,13 @@
   .news-section-page
     padding: 60px 0
 
-  .mt-48  
-    margin-top: 24px    
+  .mt-48
+    margin-top: 24px
 
 @media only screen and (max-width: 576px)
   h1, .h1
     font-size: 26px
-    
+
   .project-card__img
     height: 250px
 
@@ -624,7 +664,7 @@
       img
         width: 30px
         height: 30px
-        min-width: 30px      
+        min-width: 30px
 
   .contacts-page__head
     flex-direction: column
@@ -636,10 +676,30 @@
   .contacts-box
     padding: 16px
 
-
   .contacts-page .map-geography
     height: 300px
-                
+
+  .mission-list
+    margin: 20px 0 0
+
+  .industrial-materials-item .mission-list-item__icon
+    width: 40px
+    height: 40px
+    min-width: 40px
+    padding: 5px
+
+  .mission-section h2
+    margin: 0 auto 30px
+
+  .applications-box1
+    padding: 24px
+
+  .applications-box
+    &__img
+      height: 250px
+    &__body
+      padding: 16px
+      height: calc( 100% - 250px )
 
 @media only screen and (max-width: 480px)
   .p-120

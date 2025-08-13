@@ -955,3 +955,191 @@
   margin: 0;
   max-width: 450px;
 }
+
+.manufacturer .article-slider {
+  margin: 0;
+}
+.manufacturer .article-slider .slick-prev {
+  left: 0;
+}
+.manufacturer .article-slider .slick-next {
+  right: 0;
+}
+
+.title-wrapper {
+  width: 100%;
+  padding: 32px;
+  margin: 0 0 48px;
+  border: 1px solid rgba(27, 38, 49, 0.4);
+}
+.title-wrapper h2 {
+  margin: 0;
+}
+
+.mission-section-my h2 {
+  margin: 0 auto 24px;
+}
+.mission-section-my .box-text-big {
+  text-align: center;
+  max-width: 890px;
+  margin: 0 auto;
+}
+.mission-section-my .box-text-big strong {
+  display: inline;
+}
+.mission-section-my .mission-advantages-item {
+  flex-direction: column-reverse;
+}
+.mission-section-my .mission-advantages-item .box-text {
+  margin: auto 0 0;
+}
+.mission-section-my .mission-advantages-item__icon {
+  margin: 0 0 24px;
+}
+
+.industrial-materials h2 {
+  margin: 0 0 24px;
+}
+
+.industrial-materials-item .mission-list-item__icon {
+  fill: #6AC1EF;
+  border: 1px solid #6AC1EF;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  padding: 8px;
+}
+
+.product-page {
+  padding: 80px 0;
+}
+
+.advantages-product {
+  padding: 120px 0;
+}
+.advantages-product h2 {
+  margin: 0;
+  color: #fff;
+}
+.advantages-product .advantages-box__body {
+  display: flex;
+  align-items: flex-start;
+}
+.advantages-product .advantages-box__body .box-text {
+  margin: 0;
+}
+.advantages-product .advantages-box__body h4 {
+  margin: 0 0 8px;
+}
+.advantages-product .advantages-box__icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background: #fff;
+  margin: 0 24px 0 0;
+  padding: 8px;
+  fill: #1B2631;
+}
+.advantages-product .advantages-box:first-child .advantages-box__body::before, .advantages-product .advantages-box:first-child .advantages-box__body:after, .advantages-product .advantages-box:last-child .advantages-box__body::before, .advantages-product .advantages-box:last-child .advantages-box__body:after, .advantages-product .advantages-wrapper::before, .advantages-product .advantages-wrapper:after {
+  display: none;
+}
+
+.applications-section {
+  margin: 120px 0 100px;
+}
+.applications-section h2 {
+  margin: 0 0 24px;
+}
+
+.applications-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border: 1px solid #1B2631;
+  background: #fff;
+}
+.applications-box__img {
+  width: 100%;
+  height: 321px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.applications-box__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.applications-box__body {
+  width: 100%;
+  height: calc(100% - 321px);
+  padding: 24px;
+}
+.applications-box__body .box-text {
+  margin: 4px 0 0;
+}
+.applications-box h4 {
+  margin: 0;
+}
+
+.applications-box1 {
+  background: #1B2631;
+  color: #fff;
+  padding: 32px;
+  border-color: #1B2631;
+}
+
+.certificates-slider .slick-prev {
+  left: 0;
+}
+.certificates-slider .slick-next {
+  right: 0;
+}
+
+.certificate-item {
+  width: 100%;
+}
+.certificate-item img {
+  width: 100%;
+}
+
+.certificates-section .advantages-box {
+  width: 33.3333%;
+}
+.certificates-section .advantages-box__top {
+  height: 180px;
+}
+.certificates-section .advantages-box__body {
+  height: calc(100% - 180px);
+}
+.certificates-section .advantages-box1 .advantages-box__body {
+  padding: 0;
+}
+
+.link-toggle-text {
+  display: flex;
+  align-items: center;
+  margin: 2px 0 0;
+}
+.link-toggle-text:hover {
+  color: #fff;
+}
+.link-toggle-text:hover svg {
+  fill: #fff;
+}
+.link-toggle-text svg {
+  fill: #6AC1EF;
+  width: 28px;
+  height: 31px;
+  min-width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-toggle-text.active svg {
+  transform: rotate(180deg);
+}

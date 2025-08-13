@@ -41,6 +41,64 @@ $('.article-slider').slick({
   ]
 });
 
+$('.certificates-slider').slick({
+  slidesToShow: 2,
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+  responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
+});
+
+
+$(function () {
+  $('.advantages-box').each(function () {
+    let $this = $(this);
+    let paragraphs = $this.find('.advantages-box__body > .box-text p');
+
+    // Проверяем, больше ли 1 абзацев
+    if (paragraphs.length > 1) {
+      // Скрываем абзацы после второго
+      paragraphs.slice(1).wrapAll('<div class="hidden-text" style="display:none;"></div>');
+
+      // Добавляем кнопку
+      $this.find('.advantages-box__body .box-text').append(`
+        <a href="#" class="link-toggle-text color-accent">
+          <span>Читать далее</span>
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+          </svg>
+        </a>
+      `);
+    }
+  });
+
+  // Обработчик клика на кнопку
+  $(document).on('click', '.link-toggle-text', function (e) {
+    e.preventDefault();
+
+    let $btn = $(this);
+    let $hiddenText = $btn.siblings('.hidden-text');
+
+    $hiddenText.slideToggle(300);
+
+    // Меняем текст кнопки
+    if ($btn.hasClass('active')) {
+      $btn.removeClass('active').find('span').text('Читать далее');
+      // $btn.find('use').attr('xlink:href', 'img/sprite.svg#arrow-bottom');
+    } else {
+      $btn.addClass('active').find('span').text('Скрыть');
+      // $btn.find('use').attr('xlink:href', 'img/sprite.svg#arrow-top');
+    }
+  });
+});
+
+
 //auto counter total//
 let homeSlider = $('.home-slider');
 

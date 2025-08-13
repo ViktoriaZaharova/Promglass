@@ -340,7 +340,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 
 strong, b {
   font-weight: bold;
-  display: inline-block;
+  display: inline;
 }
 
 ul, ol {
@@ -471,7 +471,7 @@ h4, .h4 {
 
 .box-text {
   font-size: 18px;
-  line-height: 20px;
+  line-height: 22px;
   letter-spacing: 0.4px;
 }
 .box-text p {

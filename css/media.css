@@ -299,6 +299,15 @@
   .contacts-box {
     padding: 20px;
   }
+  .advantages-product .advantages-box {
+    width: 33.33%;
+  }
+  .advantages-product .advantages-box:last-child::before, .advantages-product .advantages-box:last-child:after {
+    display: block;
+  }
+  .applications-section {
+    margin: 60px 0 40px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .history-company .h1 {
@@ -439,6 +448,45 @@
   }
   .contacts-page .nav-breadcrumb {
     margin: 0 0 24px;
+  }
+  .advantages-product {
+    padding: 60px 0;
+  }
+  .advantages-product .advantages-box {
+    width: 100%;
+    border: 1px solid rgba(141, 146, 152, 0.5);
+    margin: 0 0 16px;
+  }
+  .advantages-product .advantages-box:last-child {
+    margin: 0;
+  }
+  .advantages-product .advantages-box::before, .advantages-product .advantages-box:after {
+    display: none;
+  }
+  .advantages-product .advantages-box__top {
+    height: auto;
+    min-height: auto;
+    border-bottom: 1px solid rgba(141, 146, 152, 0.5);
+  }
+  .advantages-product .advantages-box__body {
+    border: none;
+    height: auto;
+  }
+  .advantages-product .advantages-box:last-child::before, .advantages-product .advantages-box:last-child:after {
+    display: none;
+  }
+  .advantages-product .advantages-box br {
+    display: none;
+  }
+  .advantages-product .advantages-box__icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    padding: 5px;
+    margin: 0 10px 0 0;
+  }
+  .product-page {
+    padding: 40px 0;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -678,6 +726,28 @@
   }
   .contacts-page .map-geography {
     height: 300px;
+  }
+  .mission-list {
+    margin: 20px 0 0;
+  }
+  .industrial-materials-item .mission-list-item__icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    padding: 5px;
+  }
+  .mission-section h2 {
+    margin: 0 auto 30px;
+  }
+  .applications-box1 {
+    padding: 24px;
+  }
+  .applications-box__img {
+    height: 250px;
+  }
+  .applications-box__body {
+    padding: 16px;
+    height: calc(100% - 250px);
   }
 }
 @media only screen and (max-width: 480px) {

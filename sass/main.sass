@@ -678,7 +678,7 @@
         strong
           color: $dark
       h4
-        margin: 0 0 8px    
+        margin: 0 0 8px
   .nav-breadcrumb
     margin: 0 0 auto
   .news-card__date
@@ -695,7 +695,6 @@
     img
       width: 100%
 
-
 .article-content
   margin: 0 auto
   max-width: 982px
@@ -711,7 +710,6 @@
 
 .advantages-for-clients
   margin: 98px 0 0
-  
 
 .project-page
   h1
@@ -721,9 +719,9 @@
 .project-address
   margin: 0 0 48px
   p
-    color: rgba($dark, .6)  
+    color: rgba($dark, .6)
     strong
-      color: $dark      
+      color: $dark
 
 .realization
   .article-slider
@@ -731,11 +729,11 @@
     .slick-prev
       left: 0
     .slick-next
-      right: 0  
+      right: 0
   .history-company-box
     max-width: none
     margin: 0
-    height: 100%  
+    height: 100%
 
 .contacts-page
   padding: 80px 0 100px
@@ -745,13 +743,12 @@
     margin: 0 0 48px
   .map-geography
     height: 412px
-    width: 100%  
+    width: 100%
   &__head
     width: 100%
     display: flex
     align-items: flex-start
     margin: 0 0 16px
-
 
 .contacts-box
   border: 1px solid rgba($dark, .4)
@@ -763,7 +760,7 @@
     margin: 0
   &:hover
     background: $dark
-    color: #fff  
+    color: #fff
 
 .list-social
   width: 100%
@@ -793,4 +790,153 @@
 
 .contacts-address
   margin: 0
-  max-width: 450px  
+  max-width: 450px
+
+.manufacturer
+  .article-slider
+    margin: 0
+    .slick-prev
+      left: 0
+    .slick-next
+      right: 0
+
+.title-wrapper
+  width: 100%
+  padding: 32px
+  margin: 0 0 48px
+  border: 1px solid rgba($dark, .4)
+  h2
+    margin: 0
+
+.mission-section-my
+  h2
+    margin: 0 auto 24px
+  .box-text-big
+    text-align: center
+    max-width: 890px
+    margin: 0 auto
+    strong
+      display: inline
+  .mission-advantages-item
+    flex-direction: column-reverse
+    .box-text
+      margin: auto 0 0
+  .mission-advantages-item__icon
+    margin: 0 0 24px
+
+.industrial-materials
+  h2
+    margin: 0 0 24px
+
+.industrial-materials-item
+  .mission-list-item__icon
+    fill: $accent
+    border: 1px solid $accent
+    width: 48px
+    height: 48px
+    min-width: 48px
+    padding: 8px
+
+.product-page
+  padding: 80px 0
+
+.advantages-product
+  padding: 120px 0
+  h2
+    margin: 0
+    color: #fff
+  .advantages-box__body
+    display: flex
+    align-items: flex-start
+    .box-text
+      margin: 0
+    h4
+      margin: 0 0 8px  
+  .advantages-box__icon
+    width: 48px
+    height: 48px
+    min-width: 48px
+    background: #fff
+    margin: 0 24px 0 0
+    padding: 8px
+    fill: $dark
+  .advantages-box:first-child .advantages-box__body::before, .advantages-box:first-child .advantages-box__body:after, .advantages-box:last-child .advantages-box__body::before, .advantages-box:last-child .advantages-box__body:after, .advantages-wrapper::before, .advantages-wrapper:after
+    display: none
+
+.applications-section
+  margin: 120px 0 100px
+  h2
+    margin: 0 0 24px
+
+.applications-box
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-end
+  border: 1px solid $dark
+  background: #fff
+  &__img
+    width: 100%
+    height: 321px
+    @include d-flex
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    height: calc( 100% - 321px )
+    padding: 24px
+    .box-text
+      margin: 4px 0 0
+  h4
+    margin: 0
+
+.applications-box1
+  background: $dark
+  color: #fff
+  padding: 32px
+  border-color: $dark
+
+.certificates-slider
+  .slick-prev
+    left: 0
+  .slick-next
+    right: 0
+
+.certificate-item
+  width: 100%
+  img
+    width: 100%    
+
+.certificates-section
+  .advantages-box
+    width: 33.3333%
+    &__top
+      height: 180px
+    &__body
+      height: calc( 100% - 180px )
+  .advantages-box1
+    .advantages-box__body
+      padding: 0
+
+.link-toggle-text
+  display: flex
+  align-items: center
+  margin: 2px 0 0
+  &:hover
+    color: #fff
+    svg
+      fill: #fff
+  svg
+    fill: $accent
+    width: 28px
+    height: 31px
+    min-width: 28px
+    @include d-flex
+  &.active
+    svg  
+      transform: rotate(180deg)
+
