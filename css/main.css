@@ -1102,11 +1102,17 @@
   border-color: #1B2631;
 }
 
+.certificates-slider .slick-arrow {
+  top: auto;
+  transform: none;
+  bottom: 12px;
+}
 .certificates-slider .slick-prev {
-  left: 0;
+  left: 12px;
 }
 .certificates-slider .slick-next {
-  right: 0;
+  right: auto;
+  left: 76px;
 }
 
 .certificate-item {

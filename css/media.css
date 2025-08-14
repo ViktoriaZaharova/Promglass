@@ -83,6 +83,7 @@
   }
   header .nav-menu {
     position: fixed;
+    z-index: 10;
     left: -100%;
     top: 0;
     height: 100%;
@@ -438,7 +439,7 @@
     margin: 40px 0 0;
   }
   .mission-list {
-    margin: 30px 0 0;
+    margin: 0;
   }
   .choice-professionals h3 br {
     display: none;
@@ -450,6 +451,7 @@
     position: relative;
     z-index: 1;
     padding-bottom: 56%;
+    height: auto;
   }
   .image-wrapper img {
     position: absolute;
@@ -539,7 +541,7 @@
   }
   .slider-nav {
     justify-content: flex-start;
-    margin: 0 0 24px;
+    margin: 16px 0 24px;
   }
   .quality-slider {
     width: 100%;
@@ -594,6 +596,21 @@
   #thanksModal .modal-body {
     margin: 60px 0;
   }
+  .industrial-materials {
+    padding: 20px 0 60px;
+  }
+  .industrial-materials .box-text {
+    margin: 0 0 20px;
+  }
+  .quality-slider .slick-prev {
+    left: 0;
+  }
+  .quality-slider .slick-next {
+    right: 0;
+  }
+  .product-page .article-page__img {
+    margin: 0 auto 20px;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1, .h1 {
@@ -630,7 +647,7 @@
     margin: 14px 0;
   }
   .news-card__link {
-    margin: 0;
+    margin: 0 0 0 auto;
   }
   .news-card__title {
     width: 100%;
@@ -707,7 +724,7 @@
     margin: 0 auto -20px;
   }
   .home {
-    padding: 120px 0 0;
+    padding: 80px 0 0;
   }
   .home .h1 {
     max-width: none;
@@ -823,6 +840,12 @@
     height: 30px;
     min-width: 30px;
   }
+  .home {
+    padding: 40px 0 0;
+  }
+  .home-category {
+    margin: 20px 0 10px;
+  }
   .contacts-page__head {
     flex-direction: column;
     align-items: flex-start;
@@ -837,7 +860,7 @@
     height: 300px;
   }
   .mission-list {
-    margin: 20px 0 0;
+    margin: 0;
   }
   .industrial-materials-item .mission-list-item__icon {
     width: 40px;
@@ -862,6 +885,9 @@
 @media only screen and (max-width: 480px) {
   .p-120 {
     padding: 40px 0;
+  }
+  .industrial-materials {
+    padding: 20px 0 40px;
   }
 }
 @media only screen and (max-width: 420px) {

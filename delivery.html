@@ -339,38 +339,64 @@
     </div>
   </footer>
 
-  <!-- Modal -->
+    <!-- Modal -->
   <div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h3 class="modal-title">Поможем рассчитать стоимость Вашего проекта</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close-icon"></use>
+            </svg></button>
         </div>
         <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="box-text">
+            <p>Оставьте свои контактные данные, и наш менеджер свяжется с Вами, чтобы помочь рассчитать стоимость работ
+            </p>
+          </div>
+
+          <form method="post" class="form-callback form">
+            <label>
+              <input type="text" name="name" placeholder="Имя">
+            </label>
+            <label>
+              <input type="text" name="phone" placeholder="Телефон" required>
+            </label>
+            <label>
+              <textarea name="message" placeholder="Комментарий"></textarea>
+            </label>
+
+            <div class="form-footer">
+              <label class="label-checkbox consent-checkbox">
+                <input type="checkbox" name="checkbox" required checked>
+                <span class="label-checkbox__custom"></span>
+                <span class="label-checkbox__text">Нажимая на кнопку, вы соглашаетесь с условиями обработки
+                  персональных данных</span>
+              </label>
+              <button type="submit" class="btn btn-accent"><span class="btn-text">Отправить</span></button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
 
   <div class="modal fade" id="thanksModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close-icon"></use>
+            </svg></button>
         </div>
         <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <h3 class="modal-title">Спасибо, Ваши <br>
+            данные получены!</h3>
+          <div class="box-text">
+            <p>Наш менеджер свяжется с Вами <br>
+              в ближайшее время!</p>
+          </div>
+          <a href="#" class="btn btn-accent" data-bs-dismiss="modal">закрыть</a>
         </div>
       </div>
     </div>

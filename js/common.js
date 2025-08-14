@@ -83,6 +83,12 @@ $('.quality-slider').slick({
   nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
   responsive: [
     {
+      breakpoint: 992,
+      settings: {
+        appendArrows: '.quality-slider',
+      }
+    },
+    {
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
