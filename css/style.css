@@ -68,6 +68,62 @@
   src: url("../fonts/KronaOne/KronaOne-Regular.eot");
   src: url("../fonts/KronaOne/KronaOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/KronaOne/KronaOne-Regular.woff") format("woff"), url("../fonts/KronaOne/KronaOne-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "KronaOne";
+  font-weight: 200;
+  font-style: normal;
+  src: url("../fonts/Raleway/Raleway-Thin.eot");
+  src: url("../fonts/Raleway/Raleway-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-Thin.woff") format("woff"), url("../fonts/Raleway/Raleway-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "KronaOne";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/Raleway/Raleway-Light.eot");
+  src: url("../fonts/Raleway/Raleway-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-Light.woff") format("woff"), url("../fonts/Raleway/Raleway-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "KronaOne";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Raleway/Raleway-Regular.eot");
+  src: url("../fonts/Raleway/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "KronaOne";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Raleway/Raleway-Medium.eot");
+  src: url("../fonts/Raleway/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway/Raleway-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "KronaOne";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/Raleway/Raleway-SemiBold.eot");
+  src: url("../fonts/Raleway/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway/Raleway-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "KronaOne";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/Raleway/Raleway-Bold.eot");
+  src: url("../fonts/Raleway/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "KronaOne";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/Raleway/Raleway-ExtraBold.eot");
+  src: url("../fonts/Raleway/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway/Raleway-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "KronaOne";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/Raleway/Raleway-Black.eot");
+  src: url("../fonts/Raleway/Raleway-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway/Raleway-Black.woff") format("woff"), url("../fonts/Raleway/Raleway-Black.ttf") format("truetype");
+}
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -110,7 +166,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: normal;
-  font-family: "AvenirNextCyr", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
   background: #fff;
   color: #1B2631;
@@ -162,7 +218,7 @@ input, textarea, select {
           appearance: none;
   padding: 0 24px;
   box-sizing: border-box;
-  font-family: "AvenirNextCyr", sans-serif;
+  font-family: "Raleway", sans-serif;
   border: 1px solid #fff;
   border-radius: 0;
   width: 100%;
@@ -217,7 +273,7 @@ button, .btn {
   transition: 0.3s ease;
   cursor: pointer;
   box-shadow: none;
-  font-family: "AvenirNextCyr", sans-serif;
+  font-family: "Raleway", sans-serif;
   padding: 0;
   margin: 0;
   border: none;
@@ -591,7 +647,7 @@ h4, .h4 {
   width: 100%;
   font-size: 18px;
   line-height: 22px;
-  font-family: "AvenirNextCyr", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 .breadcrumb li a {
   color: #fff;

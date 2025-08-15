@@ -120,6 +120,12 @@
     padding: 0;
     margin: 0 0 15px;
   }
+  .dropdown-item-wrapper {
+    width: 100%;
+  }
+  .dropdown-item-wrapper .dropdown-toggle {
+    margin-left: auto;
+  }
   .dropdown-menu {
     min-width: auto;
     width: 100%;

@@ -78,6 +78,7 @@ $('.equipment-slider').slick({
 
 $('.quality-slider').slick({
   slidesToShow: 3,
+  arrows: true,
   appendArrows: '.quality-slider__nav',
   prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
   nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
@@ -85,19 +86,24 @@ $('.quality-slider').slick({
     {
       breakpoint: 992,
       settings: {
-        appendArrows: '.quality-slider',
+        arrows: true,
+        appendArrows: '.quality-slider', 
       }
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
+         arrows: true,
+        appendArrows: '.quality-slider', 
       }
     },
     {
       breakpoint: 576,
       settings: {
         slidesToShow: 1,
+         arrows: true,
+        appendArrows: '.quality-slider', 
       }
     },
   ]
