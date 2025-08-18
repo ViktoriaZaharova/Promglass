@@ -55,7 +55,7 @@ img
   text-align: center
 
 .text-right
-  text-align: right 
+  text-align: right
 
 .text-decoration
   text-decoration: underline
@@ -187,7 +187,6 @@ button, .btn
   &:hover, &:focus
     color: $dark
 
-
 .btn-accent
   background: $accent
   color: #fff
@@ -278,7 +277,7 @@ ul, ol
   margin: 0 auto
 
 .mb-12
-  margin-bottom: 12px  
+  margin-bottom: 12px
 
 .mb-20
   margin-bottom: 20px
@@ -287,19 +286,19 @@ ul, ol
   margin-bottom: 24px
 
 .mb-48
-  margin-bottom: 48px  
+  margin-bottom: 48px
 
 .mb-64
-  margin-bottom: 64px  
+  margin-bottom: 64px
 
 .mt-24
   margin-top: 24px
 
 .mt-48
-  margin-top: 48px  
+  margin-top: 48px
 
 .mt-64
-  margin-top: 64px  
+  margin-top: 64px
 
 .m-24
   margin: 24px 0
@@ -351,7 +350,7 @@ h4, .h4
 
 .box-text-border
   border: 1px solid #fff
-  padding: 32px      
+  padding: 32px
 
 .font-unbounded
   font-family: "Unbounded", sans-serif
@@ -411,11 +410,22 @@ h4, .h4
         background-size: 100%
 
 .submenu
+  .dropdown-item-wrapper
+    &:hover
+      background: #fff
+      a
+        color: #1B2631
+      .dropdown-toggle
+        background: url('../img/arrow-right-dark.svg') no-repeat center
+        background-size: 100%
+
   .dropdown-toggle
-    &:after
-      background: url('../img/arrow-right.svg') no-repeat center
-      background-size: 100%
-      margin: 0 0 0 auto
+    width: 28px
+    height: 28px
+    background: url('../img/arrow-right.svg') no-repeat center
+    background-size: 100%
+    margin: 0 12px 0 auto
+    transition: .3s ease
 
 .nav-breadcrumb
   width: 100%
@@ -442,13 +452,13 @@ h4, .h4
         display: inline-block
         margin: 0 10px
     &.active
-      color: rgba(#fff, .5)     
+      color: rgba(#fff, .5)
 
 .breadcrumb-item+.breadcrumb-item
-  padding: 0      
+  padding: 0
 
 .breadcrumb-item+.breadcrumb-item::before
-  display: none           
+  display: none
 
 .breadcrumb-v2
   text-align: left
@@ -457,7 +467,7 @@ h4, .h4
     a
       color: rgba($dark, .6)
     &.active
-      color: rgba($dark, .4)   
+      color: rgba($dark, .4)
 
 // slick slider
 .slick-slider
@@ -502,7 +512,7 @@ h4, .h4
     padding: 0 12px
     height: auto
   .slick-list
-    margin: 0 -12px  
+    margin: 0 -12px
   .slick-track
     display: flex
     align-items: stretch
@@ -513,7 +523,7 @@ h4, .h4
     right: auto
     left: -26px
   .slick-next
-    right: -26px        
+    right: -26px
 
 .slider-nav
   display: flex
@@ -530,7 +540,6 @@ h4, .h4
     right: 0
     bottom: 0
     transform: none
-
 
 //checkbox my
 .label-checkbox

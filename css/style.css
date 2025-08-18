@@ -1,32 +1,4 @@
 @font-face {
-  font-family: "AvenirNextCyr";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot");
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype");
-}
-@font-face {
-  font-family: "AvenirNextCyr";
-  font-weight: 500;
-  font-style: normal;
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot");
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Medium.ttf") format("truetype");
-}
-@font-face {
-  font-family: "AvenirNextCyr";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot");
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Bold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "AvenirNextCyr";
-  font-weight: 600;
-  font-style: normal;
-  src: url("../fonts/AvenirNextCyr/AvenirNext-DemiBold.eot");
-  src: url("../fonts/AvenirNextCyr/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNext-DemiBold.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNext-DemiBold.ttf") format("truetype");
-}
-@font-face {
   font-family: "Lack";
   font-weight: 400;
   font-style: normal;
@@ -628,10 +600,23 @@ h4, .h4 {
   background-size: 100%;
 }
 
-.submenu .dropdown-toggle:after {
+.submenu .dropdown-item-wrapper:hover {
+  background: #fff;
+}
+.submenu .dropdown-item-wrapper:hover a {
+  color: #1B2631;
+}
+.submenu .dropdown-item-wrapper:hover .dropdown-toggle {
+  background: url("../img/arrow-right-dark.svg") no-repeat center;
+  background-size: 100%;
+}
+.submenu .dropdown-toggle {
+  width: 28px;
+  height: 28px;
   background: url("../img/arrow-right.svg") no-repeat center;
   background-size: 100%;
-  margin: 0 0 0 auto;
+  margin: 0 12px 0 auto;
+  transition: 0.3s ease;
 }
 
 .nav-breadcrumb {
