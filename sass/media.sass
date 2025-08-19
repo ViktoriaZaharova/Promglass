@@ -112,7 +112,15 @@
     .dropdown-menu
       position: relative !important
       left: 0 !important
-      top: 0 !important    
+      top: 0 !important   
+    /* Делаем вложенные меню блоком */
+    .dropdown-menu .dropdown-menu
+      position: static
+      float: none
+      display: none
+
+      &.show
+        display: block   
 
   .dropdown-item-wrapper
     width: 100%

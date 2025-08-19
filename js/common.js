@@ -197,7 +197,7 @@ $(function () {
     let $parent = $this.closest(".dropdown");
     let $submenu = $parent.children(".dropdown-menu");
 
-    // закрыть все другие открытые подменю на этом уровне
+    // закрыть остальные на этом уровне
     $parent.siblings(".dropdown").find(".dropdown-menu.show").removeClass("show");
     $parent.siblings(".dropdown").find(".dropdown-toggle.active").removeClass("active");
 

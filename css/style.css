@@ -606,6 +606,9 @@ h4, .h4 {
 .submenu li .dropdown-item-wrapper:hover a {
   color: #1B2631;
 }
+.submenu li .dropdown-item-wrapper:hover .dropdown-toggle img {
+  filter: invert(1);
+}
 .submenu li .dropdown-toggle {
   width: 28px;
   height: 28px;
@@ -613,7 +616,7 @@ h4, .h4 {
   transition: 0.3s ease;
 }
 .submenu li .dropdown-toggle.active img {
-  filter: invert(1);
+  filter: invert(13%) sepia(13%) saturate(936%) hue-rotate(169deg) brightness(96%) contrast(92%);
 }
 
 .nav-breadcrumb {
