@@ -165,6 +165,7 @@ homeSlider.on('afterChange', function (event, slick, currentSlide) {
 $(document).ready(function () {
   $('.btn-burger').on('click', function (e) {
     e.stopPropagation(); // предотвратить закрытие меню при клике на кнопку
+    e.preventDefault();
     $('.nav-menu').toggleClass('active');
   });
 
