@@ -187,3 +187,26 @@ $('.btn-toggle').on('click', function (e) {
     $(this).hide();
   }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Для всех кнопок внутри подменю
+  document.querySelectorAll(".submenu-item .dropdown-toggle").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      let parent = this.closest(".dropdown");
+      let menu = parent.querySelector(".dropdown-menu");
+
+      // Закрываем другие открытые подменю на этом уровне
+      parent.parentElement.querySelectorAll(".dropdown-menu.show").forEach(function (openMenu) {
+        if (openMenu !== menu) {
+          openMenu.classList.remove("show");
+        }
+      });
+
+      // Переключаем текущее меню
+      menu.classList.toggle("show");
+    });
+  });
+});

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   width: 100%;
   z-index: 10;
@@ -94,6 +95,7 @@ header .logo img {
   align-items: flex-start;
   font-size: 18px;
   line-height: 22px;
+  /* Делаем вложенные меню блоком */
 }
 .menu .menu-item {
   margin: 0 0 0 8px;
@@ -112,6 +114,14 @@ header .logo img {
 }
 .menu .dropdown-toggle {
   background: transparent;
+}
+.menu .dropdown-menu .dropdown-menu {
+  position: static;
+  float: none;
+  display: none;
+}
+.menu .dropdown-menu .dropdown-menu.show {
+  display: block;
 }
 
 .dropdown-item-wrapper {
