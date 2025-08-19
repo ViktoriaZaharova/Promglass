@@ -87,23 +87,23 @@ $('.quality-slider').slick({
       breakpoint: 992,
       settings: {
         arrows: true,
-        appendArrows: '.quality-slider', 
+        appendArrows: '.quality-slider',
       }
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
-         arrows: true,
-        appendArrows: '.quality-slider', 
+        arrows: true,
+        appendArrows: '.quality-slider',
       }
     },
     {
       breakpoint: 576,
       settings: {
         slidesToShow: 1,
-         arrows: true,
-        appendArrows: '.quality-slider', 
+        arrows: true,
+        appendArrows: '.quality-slider',
       }
     },
   ]
@@ -188,25 +188,22 @@ $('.btn-toggle').on('click', function (e) {
   }
 });
 
+$(function () {
+  $(".submenu-item > .dropdown-item-wrapper > .dropdown-toggle").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Для всех кнопок внутри подменю
-  document.querySelectorAll(".submenu-item .dropdown-toggle").forEach(function (btn) {
-    btn.addEventListener("click", function (e) {
-      e.preventDefault();
+    let $this = $(this);
+    let $parent = $this.closest(".dropdown");
+    let $submenu = $parent.children(".dropdown-menu");
 
-      let parent = this.closest(".dropdown");
-      let menu = parent.querySelector(".dropdown-menu");
+    // закрыть все другие открытые подменю на этом уровне
+    $parent.siblings(".dropdown").find(".dropdown-menu.show").removeClass("show");
+    $parent.siblings(".dropdown").find(".dropdown-toggle.active").removeClass("active");
 
-      // Закрываем другие открытые подменю на этом уровне
-      parent.parentElement.querySelectorAll(".dropdown-menu.show").forEach(function (openMenu) {
-        if (openMenu !== menu) {
-          openMenu.classList.remove("show");
-        }
-      });
-
-      // Переключаем текущее меню
-      menu.classList.toggle("show");
-    });
+    // переключаем текущее
+    $submenu.toggleClass("show");
+    $this.toggleClass("active");
   });
 });
+

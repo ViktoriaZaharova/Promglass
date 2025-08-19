@@ -606,17 +606,14 @@ h4, .h4 {
 .submenu li .dropdown-item-wrapper:hover a {
   color: #1B2631;
 }
-.submenu li .dropdown-item-wrapper:hover .dropdown-toggle {
-  background: url("../img/arrow-right-dark.svg") no-repeat center;
-  background-size: 100%;
-}
 .submenu li .dropdown-toggle {
   width: 28px;
   height: 28px;
-  background: url("../img/arrow-right.svg") no-repeat center;
-  background-size: 100%;
   margin: 0 12px 0 auto;
   transition: 0.3s ease;
+}
+.submenu li .dropdown-toggle.active img {
+  filter: invert(1);
 }
 
 .nav-breadcrumb {
