@@ -600,17 +600,17 @@ h4, .h4 {
   background-size: 100%;
 }
 
-.submenu .dropdown-item-wrapper:hover {
+.submenu li .dropdown-item-wrapper:hover {
   background: #fff;
 }
-.submenu .dropdown-item-wrapper:hover a {
+.submenu li .dropdown-item-wrapper:hover a {
   color: #1B2631;
 }
-.submenu .dropdown-item-wrapper:hover .dropdown-toggle {
+.submenu li .dropdown-item-wrapper:hover .dropdown-toggle {
   background: url("../img/arrow-right-dark.svg") no-repeat center;
   background-size: 100%;
 }
-.submenu .dropdown-toggle {
+.submenu li .dropdown-toggle {
   width: 28px;
   height: 28px;
   background: url("../img/arrow-right.svg") no-repeat center;
