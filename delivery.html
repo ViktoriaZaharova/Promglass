@@ -25,7 +25,7 @@
 
 <body>
 
-   <header>
+ <header>
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 d-flex align-items-center">
@@ -39,14 +39,18 @@
             <ul class="my-ul menu">
               <li class="menu-item dropdown">
                 <div class="dropdown-item-wrapper"><a href="catalog.html" class="menu-link">Каталог</a>
-                  <span class="dropdown-toggle"><img src="img/arrow-bottom.svg" alt=""></span>
+                  <button class="dropdown-toggle" type="button" aria-expanded="false">
+                    <img src="img/arrow-bottom.svg" alt="">
+                  </button>
                 </div>
                 <div class="dropdown-menu">
                   <ul class="my-ul submenu">
                     <li class="submenu-item dropdown">
                       <div class="dropdown-item-wrapper"><a href="category.html"
                           class="menu-link submenu-link">Стекло</a>
-                        <span class="dropdown-toggle"></span>
+                        <button class="dropdown-toggle" type="button" aria-expanded="false">
+                          <img src="img/arrow-right.svg" alt="">
+                        </button>
                       </div>
                       <div class="dropdown-menu">
                         <a href="#" class="dropdown-item">Энергосберегающие</a>
@@ -62,9 +66,10 @@
                     <li class="submenu-item dropdown">
                       <div class="dropdown-item-wrapper"><a href="category.html"
                           class="menu-link submenu-link">Стеклопакеты</a>
-                        <span class="dropdown-toggle"></span>
+                        <button class="dropdown-toggle" type="button" aria-expanded="false">
+                          <img src="img/arrow-right.svg" alt="">
+                        </button>
                       </div>
-                      <!-- <a href="#" class="submenu-link dropdown-toggle">Стеклопакеты</a> -->
                       <div class="dropdown-menu">
                         <a href="#" class="dropdown-item">Энергосберегающие 2</a>
                         <a href="#" class="dropdown-item">Мультифункциональные</a>
