@@ -91,7 +91,7 @@ header .logo img {
 
 .menu {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   font-size: 18px;
   line-height: 22px;
 }

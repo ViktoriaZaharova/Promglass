@@ -170,8 +170,11 @@
   font-size: 234px;
   line-height: 100%;
   text-align: center;
-  margin: 0 auto -84px;
+  margin: 0 auto 24px;
   color: #6AC1EF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mission-advantages {
@@ -592,7 +595,11 @@
   padding: 10px;
   min-width: 52px;
   fill: #fff;
-  margin: 0 0 0 24px;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
 .news-card__title {
   color: #1B2631;
@@ -608,6 +615,9 @@
 }
 .news-card .box-text {
   color: rgba(25, 41, 57, 0.4);
+  position: relative;
+  z-index: 1;
+  padding: 0 76px 0 0;
 }
 .news-card:last-child {
   border-bottom: 1px solid #6AC1EF;

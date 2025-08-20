@@ -40,7 +40,21 @@
   .package-section .history-company-box
     max-width: none
 
-@media only screen and (max-width: 1400px)
+  h2, .h2
+    font-size: 40px
+
+  .btn
+    font-size: 16px 
+
+  .article-page__img
+    max-width: 500px     
+
+
+
+@media only screen and (max-width: 1440px)
+  .container, .container-fluid
+    padding: 0 20px
+
   .logo
     font-size: 30px
     img
@@ -52,7 +66,7 @@
     line-height: normal
 
   h2, .h2
-    font-size: 44px
+    font-size: 38px
     line-height: normal
 
   h3, .h3
@@ -62,6 +76,9 @@
   h4, .h4
     line-height: normal
     font-size: 22px
+
+  .btn, .box-text
+    font-size: 16px  
 
   .choice-professionals h3
     font-size: 30px
@@ -214,7 +231,7 @@
 
   .quote-icon
     font-size: 120px
-    margin: 0 auto -34px
+    margin: 0 auto 10px
 
   .counter-slide
     font-size: 34px
@@ -351,6 +368,9 @@
       margin: 18px 0 10px
 
 @media only screen and (max-width: 992px)
+  .container, .container-fluid
+    padding: 0 12px
+
   .history-company .h1
     font-size: 40px
 
@@ -594,6 +614,26 @@
     .article-page__img
       margin: 0 auto 20px
 
+  .geography-section
+    margin: 20px 0 40px    
+
+  .title-wrapper
+    padding: 24px  
+
+  .manufacturer
+    h2
+      margin: 0 0 20px
+      br
+        display: none  
+
+  .btn-requizites
+    margin: 0 0 24px
+    max-width: 578px
+    width: 100%
+
+  .advantages-product h2
+    margin: 0 0 16px  
+
 @media only screen and (max-width: 768px)
   h1, .h1
     font-size: 30px
@@ -619,12 +659,20 @@
         top: 0
     &__body
       width: 100%
-      padding: 20px 0 0
+      padding: 20px 0 0 0
       flex-wrap: wrap
+      position: relative
+      z-index: 1
+
       .box-text
         margin: 14px 0
+        padding: 0 53px 0 0
+        position: relative
+        z-index: 1
     &__link
-      margin: 0 0 0 auto
+      margin: 0
+      top: 0
+      bottom: auto
     &__title
       width: 100%
       padding: 0
@@ -694,7 +742,9 @@
 
   .quote-icon
     font-size: 60px
-    margin: 0 auto -20px
+    margin: 0 auto 10px
+    img
+      max-width: 100px
 
   .home
     padding: 80px 0 0
@@ -816,8 +866,7 @@
     flex-direction: column
     align-items: flex-start
 
-  .btn-requizites
-    margin: 10px 0 0
+  
 
   .contacts-box
     padding: 16px
@@ -846,6 +895,18 @@
     &__body
       padding: 16px
       height: calc( 100% - 250px )
+
+  .mission-advantages-item
+    flex-direction: row
+    align-items: flex-start 
+
+  .mission-advantages-item__icon
+    min-width: 24px
+    width: 24px
+    height: 24px
+    margin: 0 10px 0 0  
+    order: -1  
+    padding: 3px
 
 @media only screen and (max-width: 480px)
   .p-120
