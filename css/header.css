@@ -121,3 +121,17 @@ header .logo img {
 .dropdown-item-wrapper .dropdown-toggle:after {
   display: none;
 }
+
+.submenu-item-dropdown-toggle {
+  width: 28px;
+  height: 28px;
+  margin: 0 12px 0 auto;
+  transition: 0.3s ease;
+  background: url("../img/arrow-right.svg") no-repeat center;
+  background-size: 100%;
+  padding: 7px;
+}
+.submenu-item-dropdown-toggle.active {
+  background: url("../img/arrow-right-dark.svg") no-repeat center;
+  background-size: 100%;
+}

@@ -188,22 +188,56 @@ $('.btn-toggle').on('click', function (e) {
   }
 });
 
+// $(document).on("click", ".dropdown-toggle", function (e) {
+//   e.preventDefault();
+//   e.stopPropagation();
+
+//   let $btn = $(this);
+//   let $wrapper = $btn.closest(".dropdown-item-wrapper");
+//   let $parent = $btn.closest(".dropdown");
+//   let $submenu = $parent.children(".dropdown-menu");
+
+//   // закрываем все соседние уровни
+//   $parent.siblings(".dropdown").find(".dropdown-menu.show").removeClass("show");
+//   $parent.siblings(".dropdown").find(".dropdown-toggle.active").removeClass("active");
+
+//   // переключаем текущее подменю
+//   $submenu.toggleClass("show");
+//   $btn.toggleClass("active");
+// });
+
 $(function () {
-  $(".submenu-item > .dropdown-item-wrapper > .dropdown-toggle").on("click", function (e) {
+  // Клик по первому уровню
+  $('.menu .dropdown-toggle').on('click', function (e) {
     e.preventDefault();
-    e.stopPropagation();
-
     let $this = $(this);
-    let $parent = $this.closest(".dropdown");
-    let $submenu = $parent.children(".dropdown-menu");
 
-    // закрыть остальные на этом уровне
-    $parent.siblings(".dropdown").find(".dropdown-menu.show").removeClass("show");
-    $parent.siblings(".dropdown").find(".dropdown-toggle.active").removeClass("active");
+    // закрываем все открытые submenu второго уровня
+    $('.submenu-item-dropdown-toggle').removeClass('active');
+    $('.dropdown-menu2').removeClass('show');
 
-    // переключаем текущее
-    $submenu.toggleClass("show");
-    $this.toggleClass("active");
+    $this.toggleClass('active');
+    $this.parents('.dropdown').find('.dropdown-menu1').toggleClass('show');
+  });
+
+  // Клик по второму уровню
+  $('.submenu-item-dropdown-toggle').on('click', function (e) {
+    e.preventDefault();
+    let $this = $(this);
+
+    // закрываем все другие submenu второго уровня
+    $('.submenu-item-dropdown-toggle').not($this).removeClass('active');
+    $('.dropdown-menu2').not($this.parents('.submenu-item').find('.dropdown-menu2')).removeClass('show');
+
+    $this.toggleClass('active');
+    $this.parents('.submenu-item').find('.dropdown-menu2').toggleClass('show');
+  });
+
+  // Клик вне меню — закрыть всё
+  $(document).on('click', function (e) {
+    if (!$(e.target).closest('.dropdown, .submenu-item').length) {
+      $('.dropdown-toggle, .submenu-item-dropdown-toggle').removeClass('active');
+      $('.dropdown-menu1, .dropdown-menu2').removeClass('show');
+    }
   });
 });
-

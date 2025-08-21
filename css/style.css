@@ -560,6 +560,7 @@ h4, .h4 {
   background: #1B2631;
   padding: 0;
   font-size: 18px;
+  display: none;
 }
 .dropdown-menu ul {
   width: 100%;
@@ -606,8 +607,9 @@ h4, .h4 {
 .submenu li .dropdown-item-wrapper:hover a {
   color: #1B2631;
 }
-.submenu li .dropdown-item-wrapper:hover .dropdown-toggle img {
-  filter: invert(1);
+.submenu li .dropdown-item-wrapper:hover .submenu-item-dropdown-toggle {
+  background: url("../img/arrow-right-dark.svg") no-repeat center;
+  background-size: 100%;
 }
 .submenu li .dropdown-toggle {
   width: 28px;

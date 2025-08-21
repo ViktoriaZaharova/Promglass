@@ -100,7 +100,6 @@ header
         text-decoration: underline
   .dropdown-toggle
     background: transparent
-  
 
 .dropdown-item-wrapper
   display: flex
@@ -108,3 +107,16 @@ header
   .dropdown-toggle
     &:after
       display: none
+
+.submenu-item-dropdown-toggle
+  width: 28px
+  height: 28px
+  margin: 0 12px 0 auto
+  transition: .3s ease
+  background: url('../img/arrow-right.svg') no-repeat center
+  background-size: 100%
+  padding: 7px
+  &.active
+    background: url('../img/arrow-right-dark.svg') no-repeat center
+    background-size: 100%
+
